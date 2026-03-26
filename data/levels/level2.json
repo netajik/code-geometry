@@ -1,0 +1,502 @@
+[
+  {
+    "task_id": "L2_001",
+    "prompt": "def lv2_t01(nums):\n    \"\"\"Return sum of positive ints in nums; empty -> 0.\"\"\"\n",
+    "test_cases": "assert lv2_t01([1, -2, 3]) == 4\nassert lv2_t01([]) == 0\nassert lv2_t01([-1, -2]) == 0"
+  },
+  {
+    "task_id": "L2_002",
+    "prompt": "def lv2_t02(s):\n    \"\"\"Return number of vowels a,e,i,o,u (case insensitive) in s.\"\"\"\n",
+    "test_cases": "assert lv2_t02('AeIoU') == 5\nassert lv2_t02('xyz') == 0\nassert lv2_t02('') == 0"
+  },
+  {
+    "task_id": "L2_003",
+    "prompt": "def lv2_t03(s):\n    \"\"\"Return s reversed (empty stays empty).\"\"\"\n",
+    "test_cases": "assert lv2_t03('ab') == 'ba'\nassert lv2_t03('') == ''\nassert lv2_t03('x') == 'x'"
+  },
+  {
+    "task_id": "L2_004",
+    "prompt": "def lv2_t04(nums):\n    \"\"\"Return product of all elements; empty list -> 1.\"\"\"\n",
+    "test_cases": "assert lv2_t04([2, 3]) == 6\nassert lv2_t04([]) == 1\nassert lv2_t04([5]) == 5"
+  },
+  {
+    "task_id": "L2_005",
+    "prompt": "def lv2_t05(nums):\n    \"\"\"Return index of first negative element, or -1 if none.\"\"\"\n",
+    "test_cases": "assert lv2_t05([1, -3, 2]) == 1\nassert lv2_t05([1, 2]) == -1\nassert lv2_t05([-1]) == 0"
+  },
+  {
+    "task_id": "L2_006",
+    "prompt": "def lv2_t06(s, ch):\n    \"\"\"Return count of ch in s.\"\"\"\n",
+    "test_cases": "assert lv2_t06('aba', 'a') == 2\nassert lv2_t06('', 'x') == 0"
+  },
+  {
+    "task_id": "L2_007",
+    "prompt": "def lv2_t07(nums):\n    \"\"\"Return True if nums is strictly increasing (each < next). len<2 -> True.\"\"\"\n",
+    "test_cases": "assert lv2_t07([1,2,3]) is True\nassert lv2_t07([1,1]) is False\nassert lv2_t07([]) is True"
+  },
+  {
+    "task_id": "L2_008",
+    "prompt": "def lv2_t08(a, b, c):\n    \"\"\"Return median of three ints (middle value when sorted).\"\"\"\n",
+    "test_cases": "assert lv2_t08(1,2,3) == 2\nassert lv2_t08(5,5,1) == 5\nassert lv2_t08(9,1,7) == 7"
+  },
+  {
+    "task_id": "L2_009",
+    "prompt": "def lv2_t09(n):\n    \"\"\"Return factorial n for n>=0; 0! = 1.\"\"\"\n",
+    "test_cases": "assert lv2_t09(0) == 1\nassert lv2_t09(5) == 120\nassert lv2_t09(1) == 1"
+  },
+  {
+    "task_id": "L2_010",
+    "prompt": "def lv2_t10(s):\n    \"\"\"Return True if s is palindrome (case sensitive).\"\"\"\n",
+    "test_cases": "assert lv2_t10('aba') is True\nassert lv2_t10('ab') is False\nassert lv2_t10('') is True"
+  },
+  {
+    "task_id": "L2_011",
+    "prompt": "def lv2_t11(nums):\n    \"\"\"Return min value; assume nums non-empty.\"\"\"\n",
+    "test_cases": "assert lv2_t11([3,1,2]) == 1\nassert lv2_t11([-5]) == -5"
+  },
+  {
+    "task_id": "L2_012",
+    "prompt": "def lv2_t12(nums, k):\n    \"\"\"Return True if k appears in nums.\"\"\"\n",
+    "test_cases": "assert lv2_t12([1,2], 2) is True\nassert lv2_t12([], 0) is False"
+  },
+  {
+    "task_id": "L2_013",
+    "prompt": "def lv2_t13(s):\n    \"\"\"Return first character or '' if empty.\"\"\"\n",
+    "test_cases": "assert lv2_t13('hi') == 'h'\nassert lv2_t13('') == ''"
+  },
+  {
+    "task_id": "L2_014",
+    "prompt": "def lv2_t14(nums):\n    \"\"\"Return last element; assume nums non-empty.\"\"\"\n",
+    "test_cases": "assert lv2_t14([1,2,3]) == 3\nassert lv2_t14([9]) == 9"
+  },
+  {
+    "task_id": "L2_015",
+    "prompt": "def lv2_t15(x, lo, hi):\n    \"\"\"Clamp x into [lo, hi] (inclusive).\"\"\"\n",
+    "test_cases": "assert lv2_t15(5, 0, 10) == 5\nassert lv2_t15(-1, 0, 10) == 0\nassert lv2_t15(99, 0, 10) == 10"
+  },
+  {
+    "task_id": "L2_016",
+    "prompt": "def lv2_t16(s):\n    \"\"\"Return s without spaces.\"\"\"\n",
+    "test_cases": "assert lv2_t16('a b c') == 'abc'\nassert lv2_t16('') == ''"
+  },
+  {
+    "task_id": "L2_017",
+    "prompt": "def lv2_t17(nums):\n    \"\"\"Return number of even ints in nums.\"\"\"\n",
+    "test_cases": "assert lv2_t17([1,2,4]) == 2\nassert lv2_t17([]) == 0"
+  },
+  {
+    "task_id": "L2_018",
+    "prompt": "def lv2_t18(a, b):\n    \"\"\"Return integer floor of a/b for b!=0.\"\"\"\n",
+    "test_cases": "assert lv2_t18(7, 2) == 3\nassert lv2_t18(-7, 2) == -4"
+  },
+  {
+    "task_id": "L2_019",
+    "prompt": "def lv2_t19(s):\n    \"\"\"Return True if all chars are digits.\"\"\"\n",
+    "test_cases": "assert lv2_t19('123') is True\nassert lv2_t19('12a') is False\nassert lv2_t19('') is True"
+  },
+  {
+    "task_id": "L2_020",
+    "prompt": "def lv2_t20(nums):\n    \"\"\"Return sum of squares of nums.\"\"\"\n",
+    "test_cases": "assert lv2_t20([1,2,3]) == 14\nassert lv2_t20([]) == 0"
+  },
+  {
+    "task_id": "L2_021",
+    "prompt": "def lv2_t21(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t21([24,1,2]) == 26\nassert lv2_t21([]) == 0\nassert lv2_t21([24]) == 24"
+  },
+  {
+    "task_id": "L2_022",
+    "prompt": "def lv2_t22(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t22([25,1,2]) == 27\nassert lv2_t22([]) == 0\nassert lv2_t22([25]) == 25"
+  },
+  {
+    "task_id": "L2_023",
+    "prompt": "def lv2_t23(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t23([26,1,2]) == 28\nassert lv2_t23([]) == 0\nassert lv2_t23([26]) == 26"
+  },
+  {
+    "task_id": "L2_024",
+    "prompt": "def lv2_t24(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t24([27,1,2]) == 29\nassert lv2_t24([]) == 0\nassert lv2_t24([27]) == 27"
+  },
+  {
+    "task_id": "L2_025",
+    "prompt": "def lv2_t25(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t25([28,1,2]) == 30\nassert lv2_t25([]) == 0\nassert lv2_t25([28]) == 28"
+  },
+  {
+    "task_id": "L2_026",
+    "prompt": "def lv2_t26(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t26([29,1,2]) == 31\nassert lv2_t26([]) == 0\nassert lv2_t26([29]) == 29"
+  },
+  {
+    "task_id": "L2_027",
+    "prompt": "def lv2_t27(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t27([30,1,2]) == 32\nassert lv2_t27([]) == 0\nassert lv2_t27([30]) == 30"
+  },
+  {
+    "task_id": "L2_028",
+    "prompt": "def lv2_t28(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t28([31,1,2]) == 33\nassert lv2_t28([]) == 0\nassert lv2_t28([31]) == 31"
+  },
+  {
+    "task_id": "L2_029",
+    "prompt": "def lv2_t29(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t29([32,1,2]) == 34\nassert lv2_t29([]) == 0\nassert lv2_t29([32]) == 32"
+  },
+  {
+    "task_id": "L2_030",
+    "prompt": "def lv2_t30(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t30([33,1,2]) == 35\nassert lv2_t30([]) == 0\nassert lv2_t30([33]) == 33"
+  },
+  {
+    "task_id": "L2_031",
+    "prompt": "def lv2_t31(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t31([34,1,2]) == 36\nassert lv2_t31([]) == 0\nassert lv2_t31([34]) == 34"
+  },
+  {
+    "task_id": "L2_032",
+    "prompt": "def lv2_t32(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t32([35,1,2]) == 37\nassert lv2_t32([]) == 0\nassert lv2_t32([35]) == 35"
+  },
+  {
+    "task_id": "L2_033",
+    "prompt": "def lv2_t33(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t33([36,1,2]) == 38\nassert lv2_t33([]) == 0\nassert lv2_t33([36]) == 36"
+  },
+  {
+    "task_id": "L2_034",
+    "prompt": "def lv2_t34(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t34([37,1,2]) == 39\nassert lv2_t34([]) == 0\nassert lv2_t34([37]) == 37"
+  },
+  {
+    "task_id": "L2_035",
+    "prompt": "def lv2_t35(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t35([38,1,2]) == 40\nassert lv2_t35([]) == 0\nassert lv2_t35([38]) == 38"
+  },
+  {
+    "task_id": "L2_036",
+    "prompt": "def lv2_t36(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t36([39,1,2]) == 41\nassert lv2_t36([]) == 0\nassert lv2_t36([39]) == 39"
+  },
+  {
+    "task_id": "L2_037",
+    "prompt": "def lv2_t37(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t37([40,1,2]) == 42\nassert lv2_t37([]) == 0\nassert lv2_t37([40]) == 40"
+  },
+  {
+    "task_id": "L2_038",
+    "prompt": "def lv2_t38(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t38([41,1,2]) == 43\nassert lv2_t38([]) == 0\nassert lv2_t38([41]) == 41"
+  },
+  {
+    "task_id": "L2_039",
+    "prompt": "def lv2_t39(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t39([42,1,2]) == 44\nassert lv2_t39([]) == 0\nassert lv2_t39([42]) == 42"
+  },
+  {
+    "task_id": "L2_040",
+    "prompt": "def lv2_t40(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t40([43,1,2]) == 45\nassert lv2_t40([]) == 0\nassert lv2_t40([43]) == 43"
+  },
+  {
+    "task_id": "L2_041",
+    "prompt": "def lv2_t41(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t41([44,1,2]) == 46\nassert lv2_t41([]) == 0\nassert lv2_t41([44]) == 44"
+  },
+  {
+    "task_id": "L2_042",
+    "prompt": "def lv2_t42(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t42([45,1,2]) == 47\nassert lv2_t42([]) == 0\nassert lv2_t42([45]) == 45"
+  },
+  {
+    "task_id": "L2_043",
+    "prompt": "def lv2_t43(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t43([46,1,2]) == 48\nassert lv2_t43([]) == 0\nassert lv2_t43([46]) == 46"
+  },
+  {
+    "task_id": "L2_044",
+    "prompt": "def lv2_t44(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t44([47,1,2]) == 49\nassert lv2_t44([]) == 0\nassert lv2_t44([47]) == 47"
+  },
+  {
+    "task_id": "L2_045",
+    "prompt": "def lv2_t45(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t45([48,1,2]) == 50\nassert lv2_t45([]) == 0\nassert lv2_t45([48]) == 48"
+  },
+  {
+    "task_id": "L2_046",
+    "prompt": "def lv2_t46(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t46([49,1,2]) == 51\nassert lv2_t46([]) == 0\nassert lv2_t46([49]) == 49"
+  },
+  {
+    "task_id": "L2_047",
+    "prompt": "def lv2_t47(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t47([50,1,2]) == 52\nassert lv2_t47([]) == 0\nassert lv2_t47([50]) == 50"
+  },
+  {
+    "task_id": "L2_048",
+    "prompt": "def lv2_t48(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t48([51,1,2]) == 53\nassert lv2_t48([]) == 0\nassert lv2_t48([51]) == 51"
+  },
+  {
+    "task_id": "L2_049",
+    "prompt": "def lv2_t49(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t49([52,1,2]) == 54\nassert lv2_t49([]) == 0\nassert lv2_t49([52]) == 52"
+  },
+  {
+    "task_id": "L2_050",
+    "prompt": "def lv2_t50(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t50([53,1,2]) == 55\nassert lv2_t50([]) == 0\nassert lv2_t50([53]) == 53"
+  },
+  {
+    "task_id": "L2_051",
+    "prompt": "def lv2_t51(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t51([54,1,2]) == 56\nassert lv2_t51([]) == 0\nassert lv2_t51([54]) == 54"
+  },
+  {
+    "task_id": "L2_052",
+    "prompt": "def lv2_t52(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t52([55,1,2]) == 57\nassert lv2_t52([]) == 0\nassert lv2_t52([55]) == 55"
+  },
+  {
+    "task_id": "L2_053",
+    "prompt": "def lv2_t53(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t53([56,1,2]) == 58\nassert lv2_t53([]) == 0\nassert lv2_t53([56]) == 56"
+  },
+  {
+    "task_id": "L2_054",
+    "prompt": "def lv2_t54(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t54([57,1,2]) == 59\nassert lv2_t54([]) == 0\nassert lv2_t54([57]) == 57"
+  },
+  {
+    "task_id": "L2_055",
+    "prompt": "def lv2_t55(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t55([58,1,2]) == 60\nassert lv2_t55([]) == 0\nassert lv2_t55([58]) == 58"
+  },
+  {
+    "task_id": "L2_056",
+    "prompt": "def lv2_t56(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t56([59,1,2]) == 61\nassert lv2_t56([]) == 0\nassert lv2_t56([59]) == 59"
+  },
+  {
+    "task_id": "L2_057",
+    "prompt": "def lv2_t57(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t57([60,1,2]) == 62\nassert lv2_t57([]) == 0\nassert lv2_t57([60]) == 60"
+  },
+  {
+    "task_id": "L2_058",
+    "prompt": "def lv2_t58(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t58([61,1,2]) == 63\nassert lv2_t58([]) == 0\nassert lv2_t58([61]) == 61"
+  },
+  {
+    "task_id": "L2_059",
+    "prompt": "def lv2_t59(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t59([62,1,2]) == 64\nassert lv2_t59([]) == 0\nassert lv2_t59([62]) == 62"
+  },
+  {
+    "task_id": "L2_060",
+    "prompt": "def lv2_t60(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t60([63,1,2]) == 65\nassert lv2_t60([]) == 0\nassert lv2_t60([63]) == 63"
+  },
+  {
+    "task_id": "L2_061",
+    "prompt": "def lv2_t61(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t61([64,1,2]) == 66\nassert lv2_t61([]) == 0\nassert lv2_t61([64]) == 64"
+  },
+  {
+    "task_id": "L2_062",
+    "prompt": "def lv2_t62(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t62([65,1,2]) == 67\nassert lv2_t62([]) == 0\nassert lv2_t62([65]) == 65"
+  },
+  {
+    "task_id": "L2_063",
+    "prompt": "def lv2_t63(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t63([66,1,2]) == 68\nassert lv2_t63([]) == 0\nassert lv2_t63([66]) == 66"
+  },
+  {
+    "task_id": "L2_064",
+    "prompt": "def lv2_t64(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t64([67,1,2]) == 69\nassert lv2_t64([]) == 0\nassert lv2_t64([67]) == 67"
+  },
+  {
+    "task_id": "L2_065",
+    "prompt": "def lv2_t65(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t65([68,1,2]) == 70\nassert lv2_t65([]) == 0\nassert lv2_t65([68]) == 68"
+  },
+  {
+    "task_id": "L2_066",
+    "prompt": "def lv2_t66(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t66([69,1,2]) == 71\nassert lv2_t66([]) == 0\nassert lv2_t66([69]) == 69"
+  },
+  {
+    "task_id": "L2_067",
+    "prompt": "def lv2_t67(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t67([70,1,2]) == 72\nassert lv2_t67([]) == 0\nassert lv2_t67([70]) == 70"
+  },
+  {
+    "task_id": "L2_068",
+    "prompt": "def lv2_t68(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t68([71,1,2]) == 73\nassert lv2_t68([]) == 0\nassert lv2_t68([71]) == 71"
+  },
+  {
+    "task_id": "L2_069",
+    "prompt": "def lv2_t69(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t69([72,1,2]) == 74\nassert lv2_t69([]) == 0\nassert lv2_t69([72]) == 72"
+  },
+  {
+    "task_id": "L2_070",
+    "prompt": "def lv2_t70(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t70([73,1,2]) == 75\nassert lv2_t70([]) == 0\nassert lv2_t70([73]) == 73"
+  },
+  {
+    "task_id": "L2_071",
+    "prompt": "def lv2_t71(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t71([74,1,2]) == 76\nassert lv2_t71([]) == 0\nassert lv2_t71([74]) == 74"
+  },
+  {
+    "task_id": "L2_072",
+    "prompt": "def lv2_t72(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t72([75,1,2]) == 77\nassert lv2_t72([]) == 0\nassert lv2_t72([75]) == 75"
+  },
+  {
+    "task_id": "L2_073",
+    "prompt": "def lv2_t73(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t73([76,1,2]) == 78\nassert lv2_t73([]) == 0\nassert lv2_t73([76]) == 76"
+  },
+  {
+    "task_id": "L2_074",
+    "prompt": "def lv2_t74(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t74([77,1,2]) == 79\nassert lv2_t74([]) == 0\nassert lv2_t74([77]) == 77"
+  },
+  {
+    "task_id": "L2_075",
+    "prompt": "def lv2_t75(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t75([78,1,2]) == 80\nassert lv2_t75([]) == 0\nassert lv2_t75([78]) == 78"
+  },
+  {
+    "task_id": "L2_076",
+    "prompt": "def lv2_t76(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t76([79,1,2]) == 81\nassert lv2_t76([]) == 0\nassert lv2_t76([79]) == 79"
+  },
+  {
+    "task_id": "L2_077",
+    "prompt": "def lv2_t77(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t77([80,1,2]) == 82\nassert lv2_t77([]) == 0\nassert lv2_t77([80]) == 80"
+  },
+  {
+    "task_id": "L2_078",
+    "prompt": "def lv2_t78(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t78([81,1,2]) == 83\nassert lv2_t78([]) == 0\nassert lv2_t78([81]) == 81"
+  },
+  {
+    "task_id": "L2_079",
+    "prompt": "def lv2_t79(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t79([82,1,2]) == 84\nassert lv2_t79([]) == 0\nassert lv2_t79([82]) == 82"
+  },
+  {
+    "task_id": "L2_080",
+    "prompt": "def lv2_t80(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t80([83,1,2]) == 85\nassert lv2_t80([]) == 0\nassert lv2_t80([83]) == 83"
+  },
+  {
+    "task_id": "L2_081",
+    "prompt": "def lv2_t81(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t81([84,1,2]) == 86\nassert lv2_t81([]) == 0\nassert lv2_t81([84]) == 84"
+  },
+  {
+    "task_id": "L2_082",
+    "prompt": "def lv2_t82(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t82([85,1,2]) == 87\nassert lv2_t82([]) == 0\nassert lv2_t82([85]) == 85"
+  },
+  {
+    "task_id": "L2_083",
+    "prompt": "def lv2_t83(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t83([86,1,2]) == 88\nassert lv2_t83([]) == 0\nassert lv2_t83([86]) == 86"
+  },
+  {
+    "task_id": "L2_084",
+    "prompt": "def lv2_t84(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t84([87,1,2]) == 89\nassert lv2_t84([]) == 0\nassert lv2_t84([87]) == 87"
+  },
+  {
+    "task_id": "L2_085",
+    "prompt": "def lv2_t85(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t85([88,1,2]) == 90\nassert lv2_t85([]) == 0\nassert lv2_t85([88]) == 88"
+  },
+  {
+    "task_id": "L2_086",
+    "prompt": "def lv2_t86(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t86([89,1,2]) == 91\nassert lv2_t86([]) == 0\nassert lv2_t86([89]) == 89"
+  },
+  {
+    "task_id": "L2_087",
+    "prompt": "def lv2_t87(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t87([90,1,2]) == 92\nassert lv2_t87([]) == 0\nassert lv2_t87([90]) == 90"
+  },
+  {
+    "task_id": "L2_088",
+    "prompt": "def lv2_t88(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t88([91,1,2]) == 93\nassert lv2_t88([]) == 0\nassert lv2_t88([91]) == 91"
+  },
+  {
+    "task_id": "L2_089",
+    "prompt": "def lv2_t89(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t89([92,1,2]) == 94\nassert lv2_t89([]) == 0\nassert lv2_t89([92]) == 92"
+  },
+  {
+    "task_id": "L2_090",
+    "prompt": "def lv2_t90(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t90([93,1,2]) == 95\nassert lv2_t90([]) == 0\nassert lv2_t90([93]) == 93"
+  },
+  {
+    "task_id": "L2_091",
+    "prompt": "def lv2_t91(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t91([94,1,2]) == 96\nassert lv2_t91([]) == 0\nassert lv2_t91([94]) == 94"
+  },
+  {
+    "task_id": "L2_092",
+    "prompt": "def lv2_t92(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t92([95,1,2]) == 97\nassert lv2_t92([]) == 0\nassert lv2_t92([95]) == 95"
+  },
+  {
+    "task_id": "L2_093",
+    "prompt": "def lv2_t93(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t93([96,1,2]) == 98\nassert lv2_t93([]) == 0\nassert lv2_t93([96]) == 96"
+  },
+  {
+    "task_id": "L2_094",
+    "prompt": "def lv2_t94(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t94([97,1,2]) == 99\nassert lv2_t94([]) == 0\nassert lv2_t94([97]) == 97"
+  },
+  {
+    "task_id": "L2_095",
+    "prompt": "def lv2_t95(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t95([98,1,2]) == 100\nassert lv2_t95([]) == 0\nassert lv2_t95([98]) == 98"
+  },
+  {
+    "task_id": "L2_096",
+    "prompt": "def lv2_t96(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t96([99,1,2]) == 101\nassert lv2_t96([]) == 0\nassert lv2_t96([99]) == 99"
+  },
+  {
+    "task_id": "L2_097",
+    "prompt": "def lv2_t97(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t97([100,1,2]) == 102\nassert lv2_t97([]) == 0\nassert lv2_t97([100]) == 100"
+  },
+  {
+    "task_id": "L2_098",
+    "prompt": "def lv2_t98(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t98([101,1,2]) == 103\nassert lv2_t98([]) == 0\nassert lv2_t98([101]) == 101"
+  },
+  {
+    "task_id": "L2_099",
+    "prompt": "def lv2_t99(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t99([102,1,2]) == 104\nassert lv2_t99([]) == 0\nassert lv2_t99([102]) == 102"
+  },
+  {
+    "task_id": "L2_100",
+    "prompt": "def lv2_t100(nums):\n    \"\"\"Return sum of nums[i] for even indices i only.\"\"\"\n",
+    "test_cases": "assert lv2_t100([103,1,2]) == 105\nassert lv2_t100([]) == 0\nassert lv2_t100([103]) == 103"
+  }
+]

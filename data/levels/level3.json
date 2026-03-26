@@ -1,0 +1,502 @@
+[
+  {
+    "task_id": "L3_001",
+    "prompt": "def lv3_t01(nums):\n    \"\"\"Return second largest *distinct* value, or None if fewer than 2 distinct.\"\"\"\n",
+    "test_cases": "assert lv3_t01([5,5,3,9,9]) == 5\nassert lv3_t01([1]) is None\nassert lv3_t01([2,2]) is None"
+  },
+  {
+    "task_id": "L3_002",
+    "prompt": "def lv3_t02(s):\n    \"\"\"Return longest run length of same character (empty -> 0).\"\"\"\n",
+    "test_cases": "assert lv3_t02('aaabb') == 3\nassert lv3_t02('') == 0\nassert lv3_t02('x') == 1"
+  },
+  {
+    "task_id": "L3_003",
+    "prompt": "def lv3_t03(nums):\n    \"\"\"Return element that appears exactly once; others appear twice; assume one such exists.\"\"\"\n",
+    "test_cases": "assert lv3_t03([2,1,2]) == 1\nassert lv3_t03([4,1,2,1,2]) == 4"
+  },
+  {
+    "task_id": "L3_004",
+    "prompt": "def lv3_t04(intervals):\n    \"\"\"intervals is list of [a,b] with a<=b, sorted by a. Merge overlaps; return merged.\"\"\"\n",
+    "test_cases": "assert lv3_t04([[1,3],[2,6]]) == [[1,6]]\nassert lv3_t04([[1,4],[4,5]]) == [[1,5]]\nassert lv3_t04([]) == []"
+  },
+  {
+    "task_id": "L3_005",
+    "prompt": "def lv3_t05(s):\n    \"\"\"Return number of balanced '(' ')' pairs as a prefix scan; unbalanced extra parens ignored at end.\"\"\"\n",
+    "test_cases": "assert lv3_t05('(())') == 2\nassert lv3_t05('(()') == 1\nassert lv3_t05('') == 0"
+  },
+  {
+    "task_id": "L3_006",
+    "prompt": "def lv3_t06(nums, k):\n    \"\"\"Rotate nums right by k steps; return new list (do not mutate input).\"\"\"\n",
+    "test_cases": "assert lv3_t06([1,2,3,4], 1) == [4,1,2,3]\nassert lv3_t06([1,2], 0) == [1,2]\nassert lv3_t06([], 5) == []"
+  },
+  {
+    "task_id": "L3_007",
+    "prompt": "def lv3_t07(words):\n    \"\"\"Return words joined by single space; skip empty strings.\"\"\"\n",
+    "test_cases": "assert lv3_t07(['a','','b']) == 'a b'\nassert lv3_t07([]) == ''"
+  },
+  {
+    "task_id": "L3_008",
+    "prompt": "def lv3_t08(n):\n    \"\"\"Return binary string of n without '0b' prefix for n>=0.\"\"\"\n",
+    "test_cases": "assert lv3_t08(5) == '101'\nassert lv3_t08(0) == '0'"
+  },
+  {
+    "task_id": "L3_009",
+    "prompt": "def lv3_t09(nums):\n    \"\"\"Return list of prefix sums (length len(nums)+1, first 0).\"\"\"\n",
+    "test_cases": "assert lv3_t09([1,2,3]) == [0,1,3,6]\nassert lv3_t09([]) == [0]"
+  },
+  {
+    "task_id": "L3_010",
+    "prompt": "def lv3_t10(s, t):\n    \"\"\"Return True if t is an anagram of s (same multiset of chars).\"\"\"\n",
+    "test_cases": "assert lv3_t10('listen', 'silent') is True\nassert lv3_t10('a', 'ab') is False"
+  },
+  {
+    "task_id": "L3_011",
+    "prompt": "def lv3_t11(grid):\n    \"\"\"grid is list of equal-length str rows; return number of 'X' chars.\"\"\"\n",
+    "test_cases": "assert lv3_t11(['X.','.X']) == 2\nassert lv3_t11([]) == 0"
+  },
+  {
+    "task_id": "L3_012",
+    "prompt": "def lv3_t12(nums):\n    \"\"\"Return length of longest contiguous subarray with sum 0; if none, 0.\"\"\"\n",
+    "test_cases": "assert lv3_t12([1,-1,2]) == 2\nassert lv3_t12([1,2]) == 0\nassert lv3_t12([0]) == 1"
+  },
+  {
+    "task_id": "L3_013",
+    "prompt": "def lv3_t13(s):\n    \"\"\"Return first non-repeating char or None if none.\"\"\"\n",
+    "test_cases": "assert lv3_t13('aabbc') == 'c'\nassert lv3_t13('aabb') is None"
+  },
+  {
+    "task_id": "L3_014",
+    "prompt": "def lv3_t14(nums):\n    \"\"\"Return True if nums can become non-decreasing by changing at most one element.\"\"\"\n",
+    "test_cases": "assert lv3_t14([4,2,3]) is True\nassert lv3_t14([3,4,2,3]) is False\nassert lv3_t14([1]) is True"
+  },
+  {
+    "task_id": "L3_015",
+    "prompt": "def lv3_t15(s):\n    \"\"\"Compress runs: 'aaab' -> [('a',3),('b',1)] as list of [char,count].\"\"\"\n",
+    "test_cases": "assert lv3_t15('aaab') == [['a',3],['b',1]]\nassert lv3_t15('') == []"
+  },
+  {
+    "task_id": "L3_016",
+    "prompt": "def lv3_t16(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t16(0) == 0\nassert lv3_t16(112) == 3\nassert lv3_t16(7) == 3"
+  },
+  {
+    "task_id": "L3_017",
+    "prompt": "def lv3_t17(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t17(0) == 0\nassert lv3_t17(119) == 6\nassert lv3_t17(7) == 3"
+  },
+  {
+    "task_id": "L3_018",
+    "prompt": "def lv3_t18(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t18(0) == 0\nassert lv3_t18(126) == 6\nassert lv3_t18(7) == 3"
+  },
+  {
+    "task_id": "L3_019",
+    "prompt": "def lv3_t19(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t19(0) == 0\nassert lv3_t19(133) == 3\nassert lv3_t19(7) == 3"
+  },
+  {
+    "task_id": "L3_020",
+    "prompt": "def lv3_t20(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t20(0) == 0\nassert lv3_t20(140) == 3\nassert lv3_t20(7) == 3"
+  },
+  {
+    "task_id": "L3_021",
+    "prompt": "def lv3_t21(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t21(0) == 0\nassert lv3_t21(147) == 4\nassert lv3_t21(7) == 3"
+  },
+  {
+    "task_id": "L3_022",
+    "prompt": "def lv3_t22(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t22(0) == 0\nassert lv3_t22(154) == 4\nassert lv3_t22(7) == 3"
+  },
+  {
+    "task_id": "L3_023",
+    "prompt": "def lv3_t23(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t23(0) == 0\nassert lv3_t23(161) == 3\nassert lv3_t23(7) == 3"
+  },
+  {
+    "task_id": "L3_024",
+    "prompt": "def lv3_t24(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t24(0) == 0\nassert lv3_t24(168) == 3\nassert lv3_t24(7) == 3"
+  },
+  {
+    "task_id": "L3_025",
+    "prompt": "def lv3_t25(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t25(0) == 0\nassert lv3_t25(175) == 6\nassert lv3_t25(7) == 3"
+  },
+  {
+    "task_id": "L3_026",
+    "prompt": "def lv3_t26(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t26(0) == 0\nassert lv3_t26(182) == 5\nassert lv3_t26(7) == 3"
+  },
+  {
+    "task_id": "L3_027",
+    "prompt": "def lv3_t27(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t27(0) == 0\nassert lv3_t27(189) == 6\nassert lv3_t27(7) == 3"
+  },
+  {
+    "task_id": "L3_028",
+    "prompt": "def lv3_t28(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t28(0) == 0\nassert lv3_t28(196) == 3\nassert lv3_t28(7) == 3"
+  },
+  {
+    "task_id": "L3_029",
+    "prompt": "def lv3_t29(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t29(0) == 0\nassert lv3_t29(203) == 5\nassert lv3_t29(7) == 3"
+  },
+  {
+    "task_id": "L3_030",
+    "prompt": "def lv3_t30(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t30(0) == 0\nassert lv3_t30(210) == 4\nassert lv3_t30(7) == 3"
+  },
+  {
+    "task_id": "L3_031",
+    "prompt": "def lv3_t31(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t31(0) == 0\nassert lv3_t31(217) == 5\nassert lv3_t31(7) == 3"
+  },
+  {
+    "task_id": "L3_032",
+    "prompt": "def lv3_t32(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t32(0) == 0\nassert lv3_t32(224) == 3\nassert lv3_t32(7) == 3"
+  },
+  {
+    "task_id": "L3_033",
+    "prompt": "def lv3_t33(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t33(0) == 0\nassert lv3_t33(231) == 6\nassert lv3_t33(7) == 3"
+  },
+  {
+    "task_id": "L3_034",
+    "prompt": "def lv3_t34(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t34(0) == 0\nassert lv3_t34(238) == 6\nassert lv3_t34(7) == 3"
+  },
+  {
+    "task_id": "L3_035",
+    "prompt": "def lv3_t35(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t35(0) == 0\nassert lv3_t35(245) == 6\nassert lv3_t35(7) == 3"
+  },
+  {
+    "task_id": "L3_036",
+    "prompt": "def lv3_t36(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t36(0) == 0\nassert lv3_t36(252) == 6\nassert lv3_t36(7) == 3"
+  },
+  {
+    "task_id": "L3_037",
+    "prompt": "def lv3_t37(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t37(0) == 0\nassert lv3_t37(259) == 3\nassert lv3_t37(7) == 3"
+  },
+  {
+    "task_id": "L3_038",
+    "prompt": "def lv3_t38(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t38(0) == 0\nassert lv3_t38(266) == 3\nassert lv3_t38(7) == 3"
+  },
+  {
+    "task_id": "L3_039",
+    "prompt": "def lv3_t39(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t39(0) == 0\nassert lv3_t39(273) == 3\nassert lv3_t39(7) == 3"
+  },
+  {
+    "task_id": "L3_040",
+    "prompt": "def lv3_t40(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t40(0) == 0\nassert lv3_t40(280) == 3\nassert lv3_t40(7) == 3"
+  },
+  {
+    "task_id": "L3_041",
+    "prompt": "def lv3_t41(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t41(0) == 0\nassert lv3_t41(287) == 6\nassert lv3_t41(7) == 3"
+  },
+  {
+    "task_id": "L3_042",
+    "prompt": "def lv3_t42(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t42(0) == 0\nassert lv3_t42(294) == 4\nassert lv3_t42(7) == 3"
+  },
+  {
+    "task_id": "L3_043",
+    "prompt": "def lv3_t43(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t43(0) == 0\nassert lv3_t43(301) == 5\nassert lv3_t43(7) == 3"
+  },
+  {
+    "task_id": "L3_044",
+    "prompt": "def lv3_t44(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t44(0) == 0\nassert lv3_t44(308) == 4\nassert lv3_t44(7) == 3"
+  },
+  {
+    "task_id": "L3_045",
+    "prompt": "def lv3_t45(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t45(0) == 0\nassert lv3_t45(315) == 6\nassert lv3_t45(7) == 3"
+  },
+  {
+    "task_id": "L3_046",
+    "prompt": "def lv3_t46(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t46(0) == 0\nassert lv3_t46(322) == 3\nassert lv3_t46(7) == 3"
+  },
+  {
+    "task_id": "L3_047",
+    "prompt": "def lv3_t47(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t47(0) == 0\nassert lv3_t47(329) == 4\nassert lv3_t47(7) == 3"
+  },
+  {
+    "task_id": "L3_048",
+    "prompt": "def lv3_t48(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t48(0) == 0\nassert lv3_t48(336) == 3\nassert lv3_t48(7) == 3"
+  },
+  {
+    "task_id": "L3_049",
+    "prompt": "def lv3_t49(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t49(0) == 0\nassert lv3_t49(343) == 6\nassert lv3_t49(7) == 3"
+  },
+  {
+    "task_id": "L3_050",
+    "prompt": "def lv3_t50(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t50(0) == 0\nassert lv3_t50(350) == 6\nassert lv3_t50(7) == 3"
+  },
+  {
+    "task_id": "L3_051",
+    "prompt": "def lv3_t51(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t51(0) == 0\nassert lv3_t51(357) == 5\nassert lv3_t51(7) == 3"
+  },
+  {
+    "task_id": "L3_052",
+    "prompt": "def lv3_t52(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t52(0) == 0\nassert lv3_t52(364) == 5\nassert lv3_t52(7) == 3"
+  },
+  {
+    "task_id": "L3_053",
+    "prompt": "def lv3_t53(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t53(0) == 0\nassert lv3_t53(371) == 6\nassert lv3_t53(7) == 3"
+  },
+  {
+    "task_id": "L3_054",
+    "prompt": "def lv3_t54(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t54(0) == 0\nassert lv3_t54(378) == 6\nassert lv3_t54(7) == 3"
+  },
+  {
+    "task_id": "L3_055",
+    "prompt": "def lv3_t55(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t55(0) == 0\nassert lv3_t55(385) == 3\nassert lv3_t55(7) == 3"
+  },
+  {
+    "task_id": "L3_056",
+    "prompt": "def lv3_t56(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t56(0) == 0\nassert lv3_t56(392) == 3\nassert lv3_t56(7) == 3"
+  },
+  {
+    "task_id": "L3_057",
+    "prompt": "def lv3_t57(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t57(0) == 0\nassert lv3_t57(399) == 6\nassert lv3_t57(7) == 3"
+  },
+  {
+    "task_id": "L3_058",
+    "prompt": "def lv3_t58(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t58(0) == 0\nassert lv3_t58(406) == 5\nassert lv3_t58(7) == 3"
+  },
+  {
+    "task_id": "L3_059",
+    "prompt": "def lv3_t59(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t59(0) == 0\nassert lv3_t59(413) == 6\nassert lv3_t59(7) == 3"
+  },
+  {
+    "task_id": "L3_060",
+    "prompt": "def lv3_t60(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t60(0) == 0\nassert lv3_t60(420) == 4\nassert lv3_t60(7) == 3"
+  },
+  {
+    "task_id": "L3_061",
+    "prompt": "def lv3_t61(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t61(0) == 0\nassert lv3_t61(427) == 6\nassert lv3_t61(7) == 3"
+  },
+  {
+    "task_id": "L3_062",
+    "prompt": "def lv3_t62(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t62(0) == 0\nassert lv3_t62(434) == 5\nassert lv3_t62(7) == 3"
+  },
+  {
+    "task_id": "L3_063",
+    "prompt": "def lv3_t63(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t63(0) == 0\nassert lv3_t63(441) == 6\nassert lv3_t63(7) == 3"
+  },
+  {
+    "task_id": "L3_064",
+    "prompt": "def lv3_t64(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t64(0) == 0\nassert lv3_t64(448) == 3\nassert lv3_t64(7) == 3"
+  },
+  {
+    "task_id": "L3_065",
+    "prompt": "def lv3_t65(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t65(0) == 0\nassert lv3_t65(455) == 6\nassert lv3_t65(7) == 3"
+  },
+  {
+    "task_id": "L3_066",
+    "prompt": "def lv3_t66(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t66(0) == 0\nassert lv3_t66(462) == 6\nassert lv3_t66(7) == 3"
+  },
+  {
+    "task_id": "L3_067",
+    "prompt": "def lv3_t67(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t67(0) == 0\nassert lv3_t67(469) == 6\nassert lv3_t67(7) == 3"
+  },
+  {
+    "task_id": "L3_068",
+    "prompt": "def lv3_t68(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t68(0) == 0\nassert lv3_t68(476) == 6\nassert lv3_t68(7) == 3"
+  },
+  {
+    "task_id": "L3_069",
+    "prompt": "def lv3_t69(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t69(0) == 0\nassert lv3_t69(483) == 6\nassert lv3_t69(7) == 3"
+  },
+  {
+    "task_id": "L3_070",
+    "prompt": "def lv3_t70(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t70(0) == 0\nassert lv3_t70(490) == 6\nassert lv3_t70(7) == 3"
+  },
+  {
+    "task_id": "L3_071",
+    "prompt": "def lv3_t71(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t71(0) == 0\nassert lv3_t71(497) == 6\nassert lv3_t71(7) == 3"
+  },
+  {
+    "task_id": "L3_072",
+    "prompt": "def lv3_t72(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t72(0) == 0\nassert lv3_t72(504) == 6\nassert lv3_t72(7) == 3"
+  },
+  {
+    "task_id": "L3_073",
+    "prompt": "def lv3_t73(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t73(0) == 0\nassert lv3_t73(511) == 9\nassert lv3_t73(7) == 3"
+  },
+  {
+    "task_id": "L3_074",
+    "prompt": "def lv3_t74(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t74(0) == 0\nassert lv3_t74(518) == 3\nassert lv3_t74(7) == 3"
+  },
+  {
+    "task_id": "L3_075",
+    "prompt": "def lv3_t75(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t75(0) == 0\nassert lv3_t75(525) == 4\nassert lv3_t75(7) == 3"
+  },
+  {
+    "task_id": "L3_076",
+    "prompt": "def lv3_t76(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t76(0) == 0\nassert lv3_t76(532) == 3\nassert lv3_t76(7) == 3"
+  },
+  {
+    "task_id": "L3_077",
+    "prompt": "def lv3_t77(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t77(0) == 0\nassert lv3_t77(539) == 5\nassert lv3_t77(7) == 3"
+  },
+  {
+    "task_id": "L3_078",
+    "prompt": "def lv3_t78(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t78(0) == 0\nassert lv3_t78(546) == 3\nassert lv3_t78(7) == 3"
+  },
+  {
+    "task_id": "L3_079",
+    "prompt": "def lv3_t79(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t79(0) == 0\nassert lv3_t79(553) == 4\nassert lv3_t79(7) == 3"
+  },
+  {
+    "task_id": "L3_080",
+    "prompt": "def lv3_t80(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t80(0) == 0\nassert lv3_t80(560) == 3\nassert lv3_t80(7) == 3"
+  },
+  {
+    "task_id": "L3_081",
+    "prompt": "def lv3_t81(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t81(0) == 0\nassert lv3_t81(567) == 6\nassert lv3_t81(7) == 3"
+  },
+  {
+    "task_id": "L3_082",
+    "prompt": "def lv3_t82(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t82(0) == 0\nassert lv3_t82(574) == 6\nassert lv3_t82(7) == 3"
+  },
+  {
+    "task_id": "L3_083",
+    "prompt": "def lv3_t83(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t83(0) == 0\nassert lv3_t83(581) == 4\nassert lv3_t83(7) == 3"
+  },
+  {
+    "task_id": "L3_084",
+    "prompt": "def lv3_t84(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t84(0) == 0\nassert lv3_t84(588) == 4\nassert lv3_t84(7) == 3"
+  },
+  {
+    "task_id": "L3_085",
+    "prompt": "def lv3_t85(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t85(0) == 0\nassert lv3_t85(595) == 5\nassert lv3_t85(7) == 3"
+  },
+  {
+    "task_id": "L3_086",
+    "prompt": "def lv3_t86(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t86(0) == 0\nassert lv3_t86(602) == 5\nassert lv3_t86(7) == 3"
+  },
+  {
+    "task_id": "L3_087",
+    "prompt": "def lv3_t87(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t87(0) == 0\nassert lv3_t87(609) == 4\nassert lv3_t87(7) == 3"
+  },
+  {
+    "task_id": "L3_088",
+    "prompt": "def lv3_t88(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t88(0) == 0\nassert lv3_t88(616) == 4\nassert lv3_t88(7) == 3"
+  },
+  {
+    "task_id": "L3_089",
+    "prompt": "def lv3_t89(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t89(0) == 0\nassert lv3_t89(623) == 7\nassert lv3_t89(7) == 3"
+  },
+  {
+    "task_id": "L3_090",
+    "prompt": "def lv3_t90(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t90(0) == 0\nassert lv3_t90(630) == 6\nassert lv3_t90(7) == 3"
+  },
+  {
+    "task_id": "L3_091",
+    "prompt": "def lv3_t91(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t91(0) == 0\nassert lv3_t91(637) == 7\nassert lv3_t91(7) == 3"
+  },
+  {
+    "task_id": "L3_092",
+    "prompt": "def lv3_t92(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t92(0) == 0\nassert lv3_t92(644) == 3\nassert lv3_t92(7) == 3"
+  },
+  {
+    "task_id": "L3_093",
+    "prompt": "def lv3_t93(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t93(0) == 0\nassert lv3_t93(651) == 5\nassert lv3_t93(7) == 3"
+  },
+  {
+    "task_id": "L3_094",
+    "prompt": "def lv3_t94(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t94(0) == 0\nassert lv3_t94(658) == 4\nassert lv3_t94(7) == 3"
+  },
+  {
+    "task_id": "L3_095",
+    "prompt": "def lv3_t95(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t95(0) == 0\nassert lv3_t95(665) == 5\nassert lv3_t95(7) == 3"
+  },
+  {
+    "task_id": "L3_096",
+    "prompt": "def lv3_t96(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t96(0) == 0\nassert lv3_t96(672) == 3\nassert lv3_t96(7) == 3"
+  },
+  {
+    "task_id": "L3_097",
+    "prompt": "def lv3_t97(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t97(0) == 0\nassert lv3_t97(679) == 6\nassert lv3_t97(7) == 3"
+  },
+  {
+    "task_id": "L3_098",
+    "prompt": "def lv3_t98(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t98(0) == 0\nassert lv3_t98(686) == 6\nassert lv3_t98(7) == 3"
+  },
+  {
+    "task_id": "L3_099",
+    "prompt": "def lv3_t99(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t99(0) == 0\nassert lv3_t99(693) == 6\nassert lv3_t99(7) == 3"
+  },
+  {
+    "task_id": "L3_100",
+    "prompt": "def lv3_t100(n):\n    \"\"\"Return number of bits set in binary representation of n (n>=0).\"\"\"\n",
+    "test_cases": "assert lv3_t100(0) == 0\nassert lv3_t100(700) == 6\nassert lv3_t100(7) == 3"
+  }
+]

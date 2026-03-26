@@ -1,0 +1,11 @@
+# Results (output/, activations, logs, etc.) are NOT ignored — commit them
+# Model weights (downloaded manually); set config model.name to this path
+model/
+models/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.env
+.DS_Store

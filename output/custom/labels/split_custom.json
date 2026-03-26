@@ -1,0 +1,156 @@
+{
+  "split": "custom",
+  "n_problems": 15,
+  "problems": [
+    {
+      "index": 0,
+      "prompt": "def add_one(x):\n    \"\"\"Return x + 1.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_1",
+        "prompt": "def add_one(x):\n    \"\"\"Return x + 1.\"\"\"\n",
+        "num_test_lines": 2,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 1,
+      "prompt": "def double(n):\n    \"\"\"Return n * 2.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_2",
+        "prompt": "def double(n):\n    \"\"\"Return n * 2.\"\"\"\n",
+        "num_test_lines": 2,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 2,
+      "prompt": "def is_even(n):\n    \"\"\"Return True if n is even.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_3",
+        "prompt": "def is_even(n):\n    \"\"\"Return True if n is even.\"\"\"\n",
+        "num_test_lines": 2,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 3,
+      "prompt": "def greet(name):\n    \"\"\"Return 'Hello, {name}'.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_4",
+        "prompt": "def greet(name):\n    \"\"\"Return 'Hello, {name}'.\"\"\"\n",
+        "num_test_lines": 1,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 4,
+      "prompt": "def first(lst):\n    \"\"\"Return the first element of lst.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_5",
+        "prompt": "def first(lst):\n    \"\"\"Return the first element of lst.\"\"\"\n",
+        "num_test_lines": 1,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 5,
+      "prompt": "def length(lst):\n    \"\"\"Return the length of lst.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_6",
+        "prompt": "def length(lst):\n    \"\"\"Return the length of lst.\"\"\"\n",
+        "num_test_lines": 2,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 6,
+      "prompt": "def sum_two(a, b):\n    \"\"\"Return a + b.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_7",
+        "prompt": "def sum_two(a, b):\n    \"\"\"Return a + b.\"\"\"\n",
+        "num_test_lines": 1,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 7,
+      "prompt": "def square(x):\n    \"\"\"Return x squared.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_8",
+        "prompt": "def square(x):\n    \"\"\"Return x squared.\"\"\"\n",
+        "num_test_lines": 2,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 8,
+      "prompt": "def is_positive(n):\n    \"\"\"Return True if n > 0.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_9",
+        "prompt": "def is_positive(n):\n    \"\"\"Return True if n > 0.\"\"\"\n",
+        "num_test_lines": 2,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 9,
+      "prompt": "def max_of_two(a, b):\n    \"\"\"Return the larger of a and b.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_10",
+        "prompt": "def max_of_two(a, b):\n    \"\"\"Return the larger of a and b.\"\"\"\n",
+        "num_test_lines": 2,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 10,
+      "prompt": "def repeat(s, n):\n    \"\"\"Return s repeated n times.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_11",
+        "prompt": "def repeat(s, n):\n    \"\"\"Return s repeated n times.\"\"\"\n",
+        "num_test_lines": 1,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 11,
+      "prompt": "def product(a, b):\n    \"\"\"Return a * b.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_12",
+        "prompt": "def product(a, b):\n    \"\"\"Return a * b.\"\"\"\n",
+        "num_test_lines": 1,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 12,
+      "prompt": "def last(lst):\n    \"\"\"Return the last element of lst.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_13",
+        "prompt": "def last(lst):\n    \"\"\"Return the last element of lst.\"\"\"\n",
+        "num_test_lines": 1,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 13,
+      "prompt": "def negate(x):\n    \"\"\"Return -x.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_14",
+        "prompt": "def negate(x):\n    \"\"\"Return -x.\"\"\"\n",
+        "num_test_lines": 1,
+        "entry_point": "check"
+      }
+    },
+    {
+      "index": 14,
+      "prompt": "def identity(x):\n    \"\"\"Return x unchanged.\"\"\"\n",
+      "labels": {
+        "task_id": "quick_15",
+        "prompt": "def identity(x):\n    \"\"\"Return x unchanged.\"\"\"\n",
+        "num_test_lines": 1,
+        "entry_point": "check"
+      }
+    }
+  ]
+}

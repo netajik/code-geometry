@@ -1,0 +1,81 @@
+2026-03-18 23:26:22,627 | INFO    | ============================================================
+2026-03-18 23:26:22,627 | INFO    | Code Geometry Pipeline
+2026-03-18 23:26:22,627 | INFO    | ============================================================
+2026-03-18 23:26:22,627 | INFO    | --- Loading code problems ---
+2026-03-18 23:26:29,748 | INFO    | Loaded HumanEval test: 164 problems
+2026-03-18 23:26:29,749 | INFO    | --- Computing labels ---
+2026-03-18 23:26:29,749 | INFO    | Split test: computed 164 label sets
+2026-03-18 23:26:29,749 | INFO    | --- Saving datasets ---
+2026-03-18 23:26:29,751 | INFO    | Saved split_test.json
+2026-03-18 23:26:29,751 | INFO    | --- Loading tokenizer ---
+2026-03-18 23:26:52,969 | INFO    | Loading tokenizer: codellama/CodeLlama-7b-hf
+2026-03-18 23:27:02,937 | INFO    | --- Loading model ---
+2026-03-18 23:27:02,943 | INFO    | Loading model: codellama/CodeLlama-7b-hf
+2026-03-18 23:30:56,813 | INFO    | ============================================================
+2026-03-18 23:30:56,813 | INFO    | Code Geometry Pipeline
+2026-03-18 23:30:56,814 | INFO    | ============================================================
+2026-03-18 23:30:56,814 | INFO    | --- Loading code problems ---
+2026-03-18 23:31:04,807 | INFO    | Loaded HumanEval test: 164 problems
+2026-03-18 23:31:04,807 | INFO    | --- Computing labels ---
+2026-03-18 23:31:04,807 | INFO    | Split test: computed 164 label sets
+2026-03-18 23:31:04,807 | INFO    | --- Saving datasets ---
+2026-03-18 23:31:04,809 | INFO    | Saved split_test.json
+2026-03-18 23:31:04,809 | INFO    | --- Loading tokenizer ---
+2026-03-18 23:31:07,818 | INFO    | Loading tokenizer: codellama/CodeLlama-7b-hf
+2026-03-18 23:31:09,071 | INFO    | --- Loading model ---
+2026-03-18 23:31:09,077 | INFO    | Loading model: codellama/CodeLlama-7b-hf
+2026-03-18 23:57:51,490 | INFO    | ============================================================
+2026-03-18 23:57:51,491 | INFO    | Code Geometry Pipeline
+2026-03-18 23:57:51,491 | INFO    | ============================================================
+2026-03-18 23:57:51,491 | INFO    | --- Loading code problems ---
+2026-03-18 23:58:00,361 | INFO    | Loaded HumanEval test: 164 problems
+2026-03-18 23:58:00,361 | INFO    | --- Computing labels ---
+2026-03-18 23:58:00,361 | INFO    | Split test: computed 164 label sets
+2026-03-18 23:58:00,361 | INFO    | --- Saving datasets ---
+2026-03-18 23:58:00,363 | INFO    | Saved split_test.json
+2026-03-18 23:58:00,363 | INFO    | --- Loading tokenizer ---
+2026-03-18 23:58:03,473 | INFO    | Loading tokenizer: codellama/CodeLlama-7b-hf
+2026-03-18 23:58:08,625 | INFO    | --- Loading model ---
+2026-03-18 23:58:08,631 | INFO    | Loading model: codellama/CodeLlama-7b-hf
+2026-03-19 00:35:39,178 | INFO    | ============================================================
+2026-03-19 00:35:39,178 | INFO    | Code Geometry Pipeline
+2026-03-19 00:35:39,178 | INFO    | ============================================================
+2026-03-19 00:35:39,178 | INFO    | --- Loading code problems ---
+2026-03-19 00:35:45,394 | INFO    | Loaded HumanEval test: 164 problems
+2026-03-19 00:35:45,394 | INFO    | --- Computing labels ---
+2026-03-19 00:35:45,394 | INFO    | Split test: computed 164 label sets
+2026-03-19 00:35:45,395 | INFO    | --- Saving datasets ---
+2026-03-19 00:35:45,396 | INFO    | Saved split_test.json
+2026-03-19 00:35:45,396 | INFO    | --- Loading tokenizer ---
+2026-03-19 00:35:48,852 | INFO    | Loading tokenizer: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 00:37:12,976 | INFO    | ============================================================
+2026-03-19 00:37:12,976 | INFO    | Code Geometry Pipeline
+2026-03-19 00:37:12,976 | INFO    | ============================================================
+2026-03-19 00:37:12,976 | INFO    | --- Loading code problems ---
+2026-03-19 00:37:19,967 | INFO    | Loaded HumanEval test: 164 problems
+2026-03-19 00:37:19,967 | INFO    | --- Computing labels ---
+2026-03-19 00:37:19,967 | INFO    | Split test: computed 164 label sets
+2026-03-19 00:37:19,967 | INFO    | --- Saving datasets ---
+2026-03-19 00:37:19,969 | INFO    | Saved split_test.json
+2026-03-19 00:37:19,969 | INFO    | --- Loading tokenizer ---
+2026-03-19 00:37:23,334 | INFO    | Loading tokenizer: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 00:44:54,692 | INFO    | ============================================================
+2026-03-19 00:44:54,693 | INFO    | Code Geometry Pipeline
+2026-03-19 00:44:54,693 | INFO    | ============================================================
+2026-03-19 00:44:54,693 | INFO    | --- Loading code problems ---
+2026-03-19 00:45:10,003 | INFO    | Loaded HumanEval test: 164 problems
+2026-03-19 00:45:10,003 | INFO    | --- Computing labels ---
+2026-03-19 00:45:10,003 | INFO    | Split test: computed 164 label sets
+2026-03-19 00:45:10,003 | INFO    | --- Saving datasets ---
+2026-03-19 00:45:10,005 | INFO    | Saved split_test.json
+2026-03-19 00:45:10,005 | INFO    | --- Loading tokenizer ---
+2026-03-19 00:45:10,005 | INFO    | Loading tokenizer: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 00:45:11,845 | INFO    | --- Loading model ---
+2026-03-19 00:45:13,249 | INFO    | Loading model: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 00:45:22,116 | INFO    | Model loaded in 8.9s on mps:0
+2026-03-19 00:45:22,116 | INFO    | --- Extracting activations ---
+2026-03-19 00:45:22,116 | INFO    | Split test: extracting 164 prompts x 8 layers
+2026-03-19 00:47:31,549 | INFO    | Split test: extraction done in 129.4s
+2026-03-19 00:47:31,550 | INFO    | Activation extraction complete
+2026-03-19 00:47:31,550 | INFO    | --- Generating answers ---
+2026-03-19 00:47:31,550 | INFO    | Split test: generating for 164 problems

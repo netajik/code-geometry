@@ -1,0 +1,502 @@
+[
+  {
+    "task_id": "L4_001",
+    "prompt": "def lv4_t01(nums):\n    \"\"\"Return max subarray sum (Kadane); empty -> 0.\"\"\"\n",
+    "test_cases": "assert lv4_t01([-2,1,-3,4,-1,2,1,-5,4]) == 6\nassert lv4_t01([]) == 0\nassert lv4_t01([-1]) == 0"
+  },
+  {
+    "task_id": "L4_002",
+    "prompt": "def lv4_t02(nums):\n    \"\"\"Return product of all nums except self without division; len>=1.\"\"\"\n",
+    "test_cases": "assert lv4_t02([1,2,3,4]) == [24,12,8,6]\nassert lv4_t02([2]) == [1]"
+  },
+  {
+    "task_id": "L4_003",
+    "prompt": "def lv4_t03(s):\n    \"\"\"Longest substring without repeating characters (length).\"\"\"\n",
+    "test_cases": "assert lv4_t03('abcabcbb') == 3\nassert lv4_t03('') == 0\nassert lv4_t03('bbbb') == 1"
+  },
+  {
+    "task_id": "L4_004",
+    "prompt": "def lv4_t04(nums, target):\n    \"\"\"Two-sum: return 0-based indices i<j with nums[i]+nums[j]==target; assume unique solution.\"\"\"\n",
+    "test_cases": "assert lv4_t04([2,7,11,15], 9) in ([0,1], (0,1))\nassert lv4_t04([3,3], 6) in ([0,1], (0,1))"
+  },
+  {
+    "task_id": "L4_005",
+    "prompt": "def lv4_t05(s):\n    \"\"\"Valid parentheses only '(' ')'; return True if balanced.\"\"\"\n",
+    "test_cases": "assert lv4_t05('(())') is True\nassert lv4_t05('(()') is False\nassert lv4_t05('') is True"
+  },
+  {
+    "task_id": "L4_006",
+    "prompt": "def lv4_t06(nums):\n    \"\"\"Next permutation lex order as list; if last permutation, return sorted ascending.\"\"\"\n",
+    "test_cases": "assert lv4_t06([1,2,3]) == [1,3,2]\nassert lv4_t06([3,2,1]) == [1,2,3]"
+  },
+  {
+    "task_id": "L4_007",
+    "prompt": "def lv4_t07(n):\n    \"\"\"Integer sqrt floor for n>=0.\"\"\"\n",
+    "test_cases": "assert lv4_t07(8) == 2\nassert lv4_t07(9) == 3\nassert lv4_t07(0) == 0"
+  },
+  {
+    "task_id": "L4_008",
+    "prompt": "def lv4_t08(nums):\n    \"\"\"Return length of LIS (strictly increasing subsequence).\"\"\"\n",
+    "test_cases": "assert lv4_t08([10,9,2,5,3,7,101,18]) == 4\nassert lv4_t08([]) == 0"
+  },
+  {
+    "task_id": "L4_009",
+    "prompt": "def lv4_t09(s, words):\n    \"\"\"words same length; return start indices where s is concatenation of each word in words exactly once (in some order).\"\"\"\n",
+    "test_cases": "assert sorted(lv4_t09('barfoothefoobarman', ['foo','bar'])) == [0,9]\nassert lv4_t09('a', ['a']) == [0]\nassert lv4_t09('ab', ['a','c']) == []"
+  },
+  {
+    "task_id": "L4_010",
+    "prompt": "def lv4_t10(grid):\n    \"\"\"grid rows are str of 0/1; return number of islands (4-connected '1').\"\"\"\n",
+    "test_cases": "assert lv4_t10(['111','010','111']) == 1\nassert lv4_t10(['10','01']) == 2"
+  },
+  {
+    "task_id": "L4_011",
+    "prompt": "def lv4_t11(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t11(0) == 0\nassert lv4_t11(1) == 1\nassert lv4_t11(10) == 55"
+  },
+  {
+    "task_id": "L4_012",
+    "prompt": "def lv4_t12(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t12(0) == 0\nassert lv4_t12(1) == 1\nassert lv4_t12(10) == 55"
+  },
+  {
+    "task_id": "L4_013",
+    "prompt": "def lv4_t13(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t13(0) == 0\nassert lv4_t13(1) == 1\nassert lv4_t13(10) == 55"
+  },
+  {
+    "task_id": "L4_014",
+    "prompt": "def lv4_t14(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t14(0) == 0\nassert lv4_t14(1) == 1\nassert lv4_t14(10) == 55"
+  },
+  {
+    "task_id": "L4_015",
+    "prompt": "def lv4_t15(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t15(0) == 0\nassert lv4_t15(1) == 1\nassert lv4_t15(10) == 55"
+  },
+  {
+    "task_id": "L4_016",
+    "prompt": "def lv4_t16(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t16(0) == 0\nassert lv4_t16(1) == 1\nassert lv4_t16(10) == 55"
+  },
+  {
+    "task_id": "L4_017",
+    "prompt": "def lv4_t17(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t17(0) == 0\nassert lv4_t17(1) == 1\nassert lv4_t17(10) == 55"
+  },
+  {
+    "task_id": "L4_018",
+    "prompt": "def lv4_t18(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t18(0) == 0\nassert lv4_t18(1) == 1\nassert lv4_t18(10) == 55"
+  },
+  {
+    "task_id": "L4_019",
+    "prompt": "def lv4_t19(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t19(0) == 0\nassert lv4_t19(1) == 1\nassert lv4_t19(10) == 55"
+  },
+  {
+    "task_id": "L4_020",
+    "prompt": "def lv4_t20(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t20(0) == 0\nassert lv4_t20(1) == 1\nassert lv4_t20(10) == 55"
+  },
+  {
+    "task_id": "L4_021",
+    "prompt": "def lv4_t21(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t21(0) == 0\nassert lv4_t21(1) == 1\nassert lv4_t21(10) == 55"
+  },
+  {
+    "task_id": "L4_022",
+    "prompt": "def lv4_t22(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t22(0) == 0\nassert lv4_t22(1) == 1\nassert lv4_t22(10) == 55"
+  },
+  {
+    "task_id": "L4_023",
+    "prompt": "def lv4_t23(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t23(0) == 0\nassert lv4_t23(1) == 1\nassert lv4_t23(10) == 55"
+  },
+  {
+    "task_id": "L4_024",
+    "prompt": "def lv4_t24(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t24(0) == 0\nassert lv4_t24(1) == 1\nassert lv4_t24(10) == 55"
+  },
+  {
+    "task_id": "L4_025",
+    "prompt": "def lv4_t25(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t25(0) == 0\nassert lv4_t25(1) == 1\nassert lv4_t25(10) == 55"
+  },
+  {
+    "task_id": "L4_026",
+    "prompt": "def lv4_t26(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t26(0) == 0\nassert lv4_t26(1) == 1\nassert lv4_t26(10) == 55"
+  },
+  {
+    "task_id": "L4_027",
+    "prompt": "def lv4_t27(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t27(0) == 0\nassert lv4_t27(1) == 1\nassert lv4_t27(10) == 55"
+  },
+  {
+    "task_id": "L4_028",
+    "prompt": "def lv4_t28(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t28(0) == 0\nassert lv4_t28(1) == 1\nassert lv4_t28(10) == 55"
+  },
+  {
+    "task_id": "L4_029",
+    "prompt": "def lv4_t29(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t29(0) == 0\nassert lv4_t29(1) == 1\nassert lv4_t29(10) == 55"
+  },
+  {
+    "task_id": "L4_030",
+    "prompt": "def lv4_t30(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t30(0) == 0\nassert lv4_t30(1) == 1\nassert lv4_t30(10) == 55"
+  },
+  {
+    "task_id": "L4_031",
+    "prompt": "def lv4_t31(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t31(0) == 0\nassert lv4_t31(1) == 1\nassert lv4_t31(10) == 55"
+  },
+  {
+    "task_id": "L4_032",
+    "prompt": "def lv4_t32(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t32(0) == 0\nassert lv4_t32(1) == 1\nassert lv4_t32(10) == 55"
+  },
+  {
+    "task_id": "L4_033",
+    "prompt": "def lv4_t33(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t33(0) == 0\nassert lv4_t33(1) == 1\nassert lv4_t33(10) == 55"
+  },
+  {
+    "task_id": "L4_034",
+    "prompt": "def lv4_t34(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t34(0) == 0\nassert lv4_t34(1) == 1\nassert lv4_t34(10) == 55"
+  },
+  {
+    "task_id": "L4_035",
+    "prompt": "def lv4_t35(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t35(0) == 0\nassert lv4_t35(1) == 1\nassert lv4_t35(10) == 55"
+  },
+  {
+    "task_id": "L4_036",
+    "prompt": "def lv4_t36(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t36(0) == 0\nassert lv4_t36(1) == 1\nassert lv4_t36(10) == 55"
+  },
+  {
+    "task_id": "L4_037",
+    "prompt": "def lv4_t37(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t37(0) == 0\nassert lv4_t37(1) == 1\nassert lv4_t37(10) == 55"
+  },
+  {
+    "task_id": "L4_038",
+    "prompt": "def lv4_t38(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t38(0) == 0\nassert lv4_t38(1) == 1\nassert lv4_t38(10) == 55"
+  },
+  {
+    "task_id": "L4_039",
+    "prompt": "def lv4_t39(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t39(0) == 0\nassert lv4_t39(1) == 1\nassert lv4_t39(10) == 55"
+  },
+  {
+    "task_id": "L4_040",
+    "prompt": "def lv4_t40(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t40(0) == 0\nassert lv4_t40(1) == 1\nassert lv4_t40(10) == 55"
+  },
+  {
+    "task_id": "L4_041",
+    "prompt": "def lv4_t41(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t41(0) == 0\nassert lv4_t41(1) == 1\nassert lv4_t41(10) == 55"
+  },
+  {
+    "task_id": "L4_042",
+    "prompt": "def lv4_t42(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t42(0) == 0\nassert lv4_t42(1) == 1\nassert lv4_t42(10) == 55"
+  },
+  {
+    "task_id": "L4_043",
+    "prompt": "def lv4_t43(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t43(0) == 0\nassert lv4_t43(1) == 1\nassert lv4_t43(10) == 55"
+  },
+  {
+    "task_id": "L4_044",
+    "prompt": "def lv4_t44(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t44(0) == 0\nassert lv4_t44(1) == 1\nassert lv4_t44(10) == 55"
+  },
+  {
+    "task_id": "L4_045",
+    "prompt": "def lv4_t45(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t45(0) == 0\nassert lv4_t45(1) == 1\nassert lv4_t45(10) == 55"
+  },
+  {
+    "task_id": "L4_046",
+    "prompt": "def lv4_t46(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t46(0) == 0\nassert lv4_t46(1) == 1\nassert lv4_t46(10) == 55"
+  },
+  {
+    "task_id": "L4_047",
+    "prompt": "def lv4_t47(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t47(0) == 0\nassert lv4_t47(1) == 1\nassert lv4_t47(10) == 55"
+  },
+  {
+    "task_id": "L4_048",
+    "prompt": "def lv4_t48(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t48(0) == 0\nassert lv4_t48(1) == 1\nassert lv4_t48(10) == 55"
+  },
+  {
+    "task_id": "L4_049",
+    "prompt": "def lv4_t49(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t49(0) == 0\nassert lv4_t49(1) == 1\nassert lv4_t49(10) == 55"
+  },
+  {
+    "task_id": "L4_050",
+    "prompt": "def lv4_t50(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t50(0) == 0\nassert lv4_t50(1) == 1\nassert lv4_t50(10) == 55"
+  },
+  {
+    "task_id": "L4_051",
+    "prompt": "def lv4_t51(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t51(0) == 0\nassert lv4_t51(1) == 1\nassert lv4_t51(10) == 55"
+  },
+  {
+    "task_id": "L4_052",
+    "prompt": "def lv4_t52(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t52(0) == 0\nassert lv4_t52(1) == 1\nassert lv4_t52(10) == 55"
+  },
+  {
+    "task_id": "L4_053",
+    "prompt": "def lv4_t53(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t53(0) == 0\nassert lv4_t53(1) == 1\nassert lv4_t53(10) == 55"
+  },
+  {
+    "task_id": "L4_054",
+    "prompt": "def lv4_t54(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t54(0) == 0\nassert lv4_t54(1) == 1\nassert lv4_t54(10) == 55"
+  },
+  {
+    "task_id": "L4_055",
+    "prompt": "def lv4_t55(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t55(0) == 0\nassert lv4_t55(1) == 1\nassert lv4_t55(10) == 55"
+  },
+  {
+    "task_id": "L4_056",
+    "prompt": "def lv4_t56(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t56(0) == 0\nassert lv4_t56(1) == 1\nassert lv4_t56(10) == 55"
+  },
+  {
+    "task_id": "L4_057",
+    "prompt": "def lv4_t57(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t57(0) == 0\nassert lv4_t57(1) == 1\nassert lv4_t57(10) == 55"
+  },
+  {
+    "task_id": "L4_058",
+    "prompt": "def lv4_t58(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t58(0) == 0\nassert lv4_t58(1) == 1\nassert lv4_t58(10) == 55"
+  },
+  {
+    "task_id": "L4_059",
+    "prompt": "def lv4_t59(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t59(0) == 0\nassert lv4_t59(1) == 1\nassert lv4_t59(10) == 55"
+  },
+  {
+    "task_id": "L4_060",
+    "prompt": "def lv4_t60(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t60(0) == 0\nassert lv4_t60(1) == 1\nassert lv4_t60(10) == 55"
+  },
+  {
+    "task_id": "L4_061",
+    "prompt": "def lv4_t61(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t61(0) == 0\nassert lv4_t61(1) == 1\nassert lv4_t61(10) == 55"
+  },
+  {
+    "task_id": "L4_062",
+    "prompt": "def lv4_t62(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t62(0) == 0\nassert lv4_t62(1) == 1\nassert lv4_t62(10) == 55"
+  },
+  {
+    "task_id": "L4_063",
+    "prompt": "def lv4_t63(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t63(0) == 0\nassert lv4_t63(1) == 1\nassert lv4_t63(10) == 55"
+  },
+  {
+    "task_id": "L4_064",
+    "prompt": "def lv4_t64(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t64(0) == 0\nassert lv4_t64(1) == 1\nassert lv4_t64(10) == 55"
+  },
+  {
+    "task_id": "L4_065",
+    "prompt": "def lv4_t65(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t65(0) == 0\nassert lv4_t65(1) == 1\nassert lv4_t65(10) == 55"
+  },
+  {
+    "task_id": "L4_066",
+    "prompt": "def lv4_t66(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t66(0) == 0\nassert lv4_t66(1) == 1\nassert lv4_t66(10) == 55"
+  },
+  {
+    "task_id": "L4_067",
+    "prompt": "def lv4_t67(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t67(0) == 0\nassert lv4_t67(1) == 1\nassert lv4_t67(10) == 55"
+  },
+  {
+    "task_id": "L4_068",
+    "prompt": "def lv4_t68(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t68(0) == 0\nassert lv4_t68(1) == 1\nassert lv4_t68(10) == 55"
+  },
+  {
+    "task_id": "L4_069",
+    "prompt": "def lv4_t69(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t69(0) == 0\nassert lv4_t69(1) == 1\nassert lv4_t69(10) == 55"
+  },
+  {
+    "task_id": "L4_070",
+    "prompt": "def lv4_t70(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t70(0) == 0\nassert lv4_t70(1) == 1\nassert lv4_t70(10) == 55"
+  },
+  {
+    "task_id": "L4_071",
+    "prompt": "def lv4_t71(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t71(0) == 0\nassert lv4_t71(1) == 1\nassert lv4_t71(10) == 55"
+  },
+  {
+    "task_id": "L4_072",
+    "prompt": "def lv4_t72(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t72(0) == 0\nassert lv4_t72(1) == 1\nassert lv4_t72(10) == 55"
+  },
+  {
+    "task_id": "L4_073",
+    "prompt": "def lv4_t73(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t73(0) == 0\nassert lv4_t73(1) == 1\nassert lv4_t73(10) == 55"
+  },
+  {
+    "task_id": "L4_074",
+    "prompt": "def lv4_t74(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t74(0) == 0\nassert lv4_t74(1) == 1\nassert lv4_t74(10) == 55"
+  },
+  {
+    "task_id": "L4_075",
+    "prompt": "def lv4_t75(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t75(0) == 0\nassert lv4_t75(1) == 1\nassert lv4_t75(10) == 55"
+  },
+  {
+    "task_id": "L4_076",
+    "prompt": "def lv4_t76(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t76(0) == 0\nassert lv4_t76(1) == 1\nassert lv4_t76(10) == 55"
+  },
+  {
+    "task_id": "L4_077",
+    "prompt": "def lv4_t77(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t77(0) == 0\nassert lv4_t77(1) == 1\nassert lv4_t77(10) == 55"
+  },
+  {
+    "task_id": "L4_078",
+    "prompt": "def lv4_t78(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t78(0) == 0\nassert lv4_t78(1) == 1\nassert lv4_t78(10) == 55"
+  },
+  {
+    "task_id": "L4_079",
+    "prompt": "def lv4_t79(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t79(0) == 0\nassert lv4_t79(1) == 1\nassert lv4_t79(10) == 55"
+  },
+  {
+    "task_id": "L4_080",
+    "prompt": "def lv4_t80(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t80(0) == 0\nassert lv4_t80(1) == 1\nassert lv4_t80(10) == 55"
+  },
+  {
+    "task_id": "L4_081",
+    "prompt": "def lv4_t81(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t81(0) == 0\nassert lv4_t81(1) == 1\nassert lv4_t81(10) == 55"
+  },
+  {
+    "task_id": "L4_082",
+    "prompt": "def lv4_t82(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t82(0) == 0\nassert lv4_t82(1) == 1\nassert lv4_t82(10) == 55"
+  },
+  {
+    "task_id": "L4_083",
+    "prompt": "def lv4_t83(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t83(0) == 0\nassert lv4_t83(1) == 1\nassert lv4_t83(10) == 55"
+  },
+  {
+    "task_id": "L4_084",
+    "prompt": "def lv4_t84(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t84(0) == 0\nassert lv4_t84(1) == 1\nassert lv4_t84(10) == 55"
+  },
+  {
+    "task_id": "L4_085",
+    "prompt": "def lv4_t85(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t85(0) == 0\nassert lv4_t85(1) == 1\nassert lv4_t85(10) == 55"
+  },
+  {
+    "task_id": "L4_086",
+    "prompt": "def lv4_t86(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t86(0) == 0\nassert lv4_t86(1) == 1\nassert lv4_t86(10) == 55"
+  },
+  {
+    "task_id": "L4_087",
+    "prompt": "def lv4_t87(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t87(0) == 0\nassert lv4_t87(1) == 1\nassert lv4_t87(10) == 55"
+  },
+  {
+    "task_id": "L4_088",
+    "prompt": "def lv4_t88(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t88(0) == 0\nassert lv4_t88(1) == 1\nassert lv4_t88(10) == 55"
+  },
+  {
+    "task_id": "L4_089",
+    "prompt": "def lv4_t89(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t89(0) == 0\nassert lv4_t89(1) == 1\nassert lv4_t89(10) == 55"
+  },
+  {
+    "task_id": "L4_090",
+    "prompt": "def lv4_t90(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t90(0) == 0\nassert lv4_t90(1) == 1\nassert lv4_t90(10) == 55"
+  },
+  {
+    "task_id": "L4_091",
+    "prompt": "def lv4_t91(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t91(0) == 0\nassert lv4_t91(1) == 1\nassert lv4_t91(10) == 55"
+  },
+  {
+    "task_id": "L4_092",
+    "prompt": "def lv4_t92(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t92(0) == 0\nassert lv4_t92(1) == 1\nassert lv4_t92(10) == 55"
+  },
+  {
+    "task_id": "L4_093",
+    "prompt": "def lv4_t93(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t93(0) == 0\nassert lv4_t93(1) == 1\nassert lv4_t93(10) == 55"
+  },
+  {
+    "task_id": "L4_094",
+    "prompt": "def lv4_t94(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t94(0) == 0\nassert lv4_t94(1) == 1\nassert lv4_t94(10) == 55"
+  },
+  {
+    "task_id": "L4_095",
+    "prompt": "def lv4_t95(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t95(0) == 0\nassert lv4_t95(1) == 1\nassert lv4_t95(10) == 55"
+  },
+  {
+    "task_id": "L4_096",
+    "prompt": "def lv4_t96(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t96(0) == 0\nassert lv4_t96(1) == 1\nassert lv4_t96(10) == 55"
+  },
+  {
+    "task_id": "L4_097",
+    "prompt": "def lv4_t97(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t97(0) == 0\nassert lv4_t97(1) == 1\nassert lv4_t97(10) == 55"
+  },
+  {
+    "task_id": "L4_098",
+    "prompt": "def lv4_t98(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t98(0) == 0\nassert lv4_t98(1) == 1\nassert lv4_t98(10) == 55"
+  },
+  {
+    "task_id": "L4_099",
+    "prompt": "def lv4_t99(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t99(0) == 0\nassert lv4_t99(1) == 1\nassert lv4_t99(10) == 55"
+  },
+  {
+    "task_id": "L4_100",
+    "prompt": "def lv4_t100(n):\n    \"\"\"Return nth Fibonacci number F(0)=0,F(1)=1.\"\"\"\n",
+    "test_cases": "assert lv4_t100(0) == 0\nassert lv4_t100(1) == 1\nassert lv4_t100(10) == 55"
+  }
+]

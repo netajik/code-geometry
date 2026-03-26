@@ -1,0 +1,17 @@
+[
+  {"task_id": "quick_1", "prompt": "def add_one(x):\n    \"\"\"Return x + 1.\"\"\"\n", "test_cases": "assert add_one(0) == 1\nassert add_one(2) == 3"},
+  {"task_id": "quick_2", "prompt": "def double(n):\n    \"\"\"Return n * 2.\"\"\"\n", "test_cases": "assert double(1) == 2\nassert double(5) == 10"},
+  {"task_id": "quick_3", "prompt": "def is_even(n):\n    \"\"\"Return True if n is even.\"\"\"\n", "test_cases": "assert is_even(2) == True\nassert is_even(3) == False"},
+  {"task_id": "quick_4", "prompt": "def greet(name):\n    \"\"\"Return 'Hello, {name}'.\"\"\"\n", "test_cases": "assert greet('a') == 'Hello, a'"},
+  {"task_id": "quick_5", "prompt": "def first(lst):\n    \"\"\"Return the first element of lst.\"\"\"\n", "test_cases": "assert first([1,2,3]) == 1"},
+  {"task_id": "quick_6", "prompt": "def length(lst):\n    \"\"\"Return the length of lst.\"\"\"\n", "test_cases": "assert length([1,2,3]) == 3\nassert length([]) == 0"},
+  {"task_id": "quick_7", "prompt": "def sum_two(a, b):\n    \"\"\"Return a + b.\"\"\"\n", "test_cases": "assert sum_two(1, 2) == 3"},
+  {"task_id": "quick_8", "prompt": "def square(x):\n    \"\"\"Return x squared.\"\"\"\n", "test_cases": "assert square(3) == 9\nassert square(0) == 0"},
+  {"task_id": "quick_9", "prompt": "def is_positive(n):\n    \"\"\"Return True if n > 0.\"\"\"\n", "test_cases": "assert is_positive(1) == True\nassert is_positive(-1) == False"},
+  {"task_id": "quick_10", "prompt": "def max_of_two(a, b):\n    \"\"\"Return the larger of a and b.\"\"\"\n", "test_cases": "assert max_of_two(1, 2) == 2\nassert max_of_two(5, 3) == 5"},
+  {"task_id": "quick_11", "prompt": "def repeat(s, n):\n    \"\"\"Return s repeated n times.\"\"\"\n", "test_cases": "assert repeat('ab', 2) == 'abab'"},
+  {"task_id": "quick_12", "prompt": "def product(a, b):\n    \"\"\"Return a * b.\"\"\"\n", "test_cases": "assert product(3, 4) == 12"},
+  {"task_id": "quick_13", "prompt": "def last(lst):\n    \"\"\"Return the last element of lst.\"\"\"\n", "test_cases": "assert last([1,2,3]) == 3"},
+  {"task_id": "quick_14", "prompt": "def negate(x):\n    \"\"\"Return -x.\"\"\"\n", "test_cases": "assert negate(5) == -5"},
+  {"task_id": "quick_15", "prompt": "def identity(x):\n    \"\"\"Return x unchanged.\"\"\"\n", "test_cases": "assert identity(42) == 42"}
+]

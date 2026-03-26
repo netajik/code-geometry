@@ -1,0 +1,502 @@
+[
+  {
+    "task_id": "L5_001",
+    "prompt": "from typing import List\n\ndef lv5_t01(nums: List[int], k: int) -> List[int]:\n    \"\"\"Return k largest distinct values sorted ascending; if fewer than k distinct, return all distinct sorted.\"\"\"\n",
+    "test_cases": "assert lv5_t01([3,1,2,2,4], 2) == [3,4]\nassert lv5_t01([5,5,5], 2) == [5]"
+  },
+  {
+    "task_id": "L5_002",
+    "prompt": "from typing import List\n\ndef lv5_t02(nums: List[int]) -> float:\n    \"\"\"Return arithmetic mean; empty list -> 0.0\"\"\"\n",
+    "test_cases": "assert lv5_t02([2,4]) == 3.0\nassert lv5_t02([]) == 0.0\nassert lv5_t02([1]) == 1.0"
+  },
+  {
+    "task_id": "L5_003",
+    "prompt": "from typing import List, Tuple\n\ndef lv5_t03(points: List[Tuple[int,int]]) -> float:\n    \"\"\"Return Euclidean distance from first point to last; len<2 -> 0.0\"\"\"\n",
+    "test_cases": "assert lv5_t03([(0,0),(3,4)]) == 5.0\nassert lv5_t03([]) == 0.0"
+  },
+  {
+    "task_id": "L5_004",
+    "prompt": "from typing import List\n\ndef lv5_t04(nums: List[int]) -> List[int]:\n    \"\"\"Move all zeros to end preserving order of non-zeros.\"\"\"\n",
+    "test_cases": "assert lv5_t04([0,1,0,3,12]) == [1,3,12,0,0]\nassert lv5_t04([]) == []"
+  },
+  {
+    "task_id": "L5_005",
+    "prompt": "from typing import List\n\ndef lv5_t05(intervals: List[List[int]]) -> int:\n    \"\"\"Minimum rooms for meeting intervals [start,end]; assume sorted input not required \u2014 sort inside.\"\"\"\n",
+    "test_cases": "assert lv5_t05([[0,30],[5,10],[15,20]]) == 2\nassert lv5_t05([[7,10],[2,4]]) == 1"
+  },
+  {
+    "task_id": "L5_006",
+    "prompt": "from typing import List\n\ndef lv5_t06(nums: List[int]) -> int:\n    \"\"\"Maximum product of any contiguous subarray.\"\"\"\n",
+    "test_cases": "assert lv5_t06([2,3,-2,4]) == 6\nassert lv5_t06([-2,0,-1]) == 0"
+  },
+  {
+    "task_id": "L5_007",
+    "prompt": "from typing import List\n\ndef lv5_t07(nums: List[int]) -> bool:\n    \"\"\"Can partition into two subsets with equal sum?\"\"\"\n",
+    "test_cases": "assert lv5_t07([1,5,11,5]) is True\nassert lv5_t07([1,2,3,5]) is False"
+  },
+  {
+    "task_id": "L5_008",
+    "prompt": "from typing import List\n\ndef lv5_t08(matrix: List[List[int]]) -> List[int]:\n    \"\"\"Return spiral order traversal of matrix (may be empty).\"\"\"\n",
+    "test_cases": "assert lv5_t08([[1,2,3],[4,5,6],[7,8,9]]) == [1,2,3,6,9,8,7,4,5]\nassert lv5_t08([]) == []"
+  },
+  {
+    "task_id": "L5_009",
+    "prompt": "from typing import List\n\ndef lv5_t09(nums: List[int]) -> int:\n    \"\"\"Minimum jumps to reach last index; each nums[i] is max jump length; assume reachable.\"\"\"\n",
+    "test_cases": "assert lv5_t09([2,3,1,1,4]) == 2\nassert lv5_t09([0]) == 0"
+  },
+  {
+    "task_id": "L5_010",
+    "prompt": "from typing import List\n\ndef lv5_t10(citations: List[int]) -> int:\n    \"\"\"H-index: max h with at least h papers having >=h citations.\"\"\"\n",
+    "test_cases": "assert lv5_t10([3,0,6,1,5]) == 3\nassert lv5_t10([1,3,1]) == 1"
+  },
+  {
+    "task_id": "L5_011",
+    "prompt": "from typing import List\n\ndef lv5_t11(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t11([]) == []\nassert lv5_t11([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t11([10]) == [10]"
+  },
+  {
+    "task_id": "L5_012",
+    "prompt": "from typing import List\n\ndef lv5_t12(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t12([]) == []\nassert lv5_t12([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t12([10]) == [10]"
+  },
+  {
+    "task_id": "L5_013",
+    "prompt": "from typing import List\n\ndef lv5_t13(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t13([]) == []\nassert lv5_t13([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t13([10]) == [10]"
+  },
+  {
+    "task_id": "L5_014",
+    "prompt": "from typing import List\n\ndef lv5_t14(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t14([]) == []\nassert lv5_t14([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t14([10]) == [10]"
+  },
+  {
+    "task_id": "L5_015",
+    "prompt": "from typing import List\n\ndef lv5_t15(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t15([]) == []\nassert lv5_t15([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t15([10]) == [10]"
+  },
+  {
+    "task_id": "L5_016",
+    "prompt": "from typing import List\n\ndef lv5_t16(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t16([]) == []\nassert lv5_t16([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t16([10]) == [10]"
+  },
+  {
+    "task_id": "L5_017",
+    "prompt": "from typing import List\n\ndef lv5_t17(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t17([]) == []\nassert lv5_t17([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t17([10]) == [10]"
+  },
+  {
+    "task_id": "L5_018",
+    "prompt": "from typing import List\n\ndef lv5_t18(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t18([]) == []\nassert lv5_t18([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t18([10]) == [10]"
+  },
+  {
+    "task_id": "L5_019",
+    "prompt": "from typing import List\n\ndef lv5_t19(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t19([]) == []\nassert lv5_t19([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t19([10]) == [10]"
+  },
+  {
+    "task_id": "L5_020",
+    "prompt": "from typing import List\n\ndef lv5_t20(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t20([]) == []\nassert lv5_t20([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t20([10]) == [10]"
+  },
+  {
+    "task_id": "L5_021",
+    "prompt": "from typing import List\n\ndef lv5_t21(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t21([]) == []\nassert lv5_t21([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t21([10]) == [10]"
+  },
+  {
+    "task_id": "L5_022",
+    "prompt": "from typing import List\n\ndef lv5_t22(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t22([]) == []\nassert lv5_t22([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t22([10]) == [10]"
+  },
+  {
+    "task_id": "L5_023",
+    "prompt": "from typing import List\n\ndef lv5_t23(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t23([]) == []\nassert lv5_t23([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t23([10]) == [10]"
+  },
+  {
+    "task_id": "L5_024",
+    "prompt": "from typing import List\n\ndef lv5_t24(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t24([]) == []\nassert lv5_t24([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t24([10]) == [10]"
+  },
+  {
+    "task_id": "L5_025",
+    "prompt": "from typing import List\n\ndef lv5_t25(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t25([]) == []\nassert lv5_t25([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t25([10]) == [10]"
+  },
+  {
+    "task_id": "L5_026",
+    "prompt": "from typing import List\n\ndef lv5_t26(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t26([]) == []\nassert lv5_t26([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t26([10]) == [10]"
+  },
+  {
+    "task_id": "L5_027",
+    "prompt": "from typing import List\n\ndef lv5_t27(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t27([]) == []\nassert lv5_t27([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t27([10]) == [10]"
+  },
+  {
+    "task_id": "L5_028",
+    "prompt": "from typing import List\n\ndef lv5_t28(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t28([]) == []\nassert lv5_t28([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t28([10]) == [10]"
+  },
+  {
+    "task_id": "L5_029",
+    "prompt": "from typing import List\n\ndef lv5_t29(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t29([]) == []\nassert lv5_t29([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t29([10]) == [10]"
+  },
+  {
+    "task_id": "L5_030",
+    "prompt": "from typing import List\n\ndef lv5_t30(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t30([]) == []\nassert lv5_t30([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t30([10]) == [10]"
+  },
+  {
+    "task_id": "L5_031",
+    "prompt": "from typing import List\n\ndef lv5_t31(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t31([]) == []\nassert lv5_t31([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t31([10]) == [10]"
+  },
+  {
+    "task_id": "L5_032",
+    "prompt": "from typing import List\n\ndef lv5_t32(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t32([]) == []\nassert lv5_t32([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t32([10]) == [10]"
+  },
+  {
+    "task_id": "L5_033",
+    "prompt": "from typing import List\n\ndef lv5_t33(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t33([]) == []\nassert lv5_t33([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t33([10]) == [10]"
+  },
+  {
+    "task_id": "L5_034",
+    "prompt": "from typing import List\n\ndef lv5_t34(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t34([]) == []\nassert lv5_t34([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t34([10]) == [10]"
+  },
+  {
+    "task_id": "L5_035",
+    "prompt": "from typing import List\n\ndef lv5_t35(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t35([]) == []\nassert lv5_t35([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t35([10]) == [10]"
+  },
+  {
+    "task_id": "L5_036",
+    "prompt": "from typing import List\n\ndef lv5_t36(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t36([]) == []\nassert lv5_t36([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t36([10]) == [10]"
+  },
+  {
+    "task_id": "L5_037",
+    "prompt": "from typing import List\n\ndef lv5_t37(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t37([]) == []\nassert lv5_t37([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t37([10]) == [10]"
+  },
+  {
+    "task_id": "L5_038",
+    "prompt": "from typing import List\n\ndef lv5_t38(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t38([]) == []\nassert lv5_t38([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t38([10]) == [10]"
+  },
+  {
+    "task_id": "L5_039",
+    "prompt": "from typing import List\n\ndef lv5_t39(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t39([]) == []\nassert lv5_t39([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t39([10]) == [10]"
+  },
+  {
+    "task_id": "L5_040",
+    "prompt": "from typing import List\n\ndef lv5_t40(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t40([]) == []\nassert lv5_t40([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t40([10]) == [10]"
+  },
+  {
+    "task_id": "L5_041",
+    "prompt": "from typing import List\n\ndef lv5_t41(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t41([]) == []\nassert lv5_t41([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t41([10]) == [10]"
+  },
+  {
+    "task_id": "L5_042",
+    "prompt": "from typing import List\n\ndef lv5_t42(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t42([]) == []\nassert lv5_t42([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t42([10]) == [10]"
+  },
+  {
+    "task_id": "L5_043",
+    "prompt": "from typing import List\n\ndef lv5_t43(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t43([]) == []\nassert lv5_t43([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t43([10]) == [10]"
+  },
+  {
+    "task_id": "L5_044",
+    "prompt": "from typing import List\n\ndef lv5_t44(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t44([]) == []\nassert lv5_t44([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t44([10]) == [10]"
+  },
+  {
+    "task_id": "L5_045",
+    "prompt": "from typing import List\n\ndef lv5_t45(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t45([]) == []\nassert lv5_t45([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t45([10]) == [10]"
+  },
+  {
+    "task_id": "L5_046",
+    "prompt": "from typing import List\n\ndef lv5_t46(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t46([]) == []\nassert lv5_t46([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t46([10]) == [10]"
+  },
+  {
+    "task_id": "L5_047",
+    "prompt": "from typing import List\n\ndef lv5_t47(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t47([]) == []\nassert lv5_t47([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t47([10]) == [10]"
+  },
+  {
+    "task_id": "L5_048",
+    "prompt": "from typing import List\n\ndef lv5_t48(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t48([]) == []\nassert lv5_t48([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t48([10]) == [10]"
+  },
+  {
+    "task_id": "L5_049",
+    "prompt": "from typing import List\n\ndef lv5_t49(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t49([]) == []\nassert lv5_t49([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t49([10]) == [10]"
+  },
+  {
+    "task_id": "L5_050",
+    "prompt": "from typing import List\n\ndef lv5_t50(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t50([]) == []\nassert lv5_t50([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t50([10]) == [10]"
+  },
+  {
+    "task_id": "L5_051",
+    "prompt": "from typing import List\n\ndef lv5_t51(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t51([]) == []\nassert lv5_t51([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t51([10]) == [10]"
+  },
+  {
+    "task_id": "L5_052",
+    "prompt": "from typing import List\n\ndef lv5_t52(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t52([]) == []\nassert lv5_t52([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t52([10]) == [10]"
+  },
+  {
+    "task_id": "L5_053",
+    "prompt": "from typing import List\n\ndef lv5_t53(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t53([]) == []\nassert lv5_t53([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t53([10]) == [10]"
+  },
+  {
+    "task_id": "L5_054",
+    "prompt": "from typing import List\n\ndef lv5_t54(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t54([]) == []\nassert lv5_t54([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t54([10]) == [10]"
+  },
+  {
+    "task_id": "L5_055",
+    "prompt": "from typing import List\n\ndef lv5_t55(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t55([]) == []\nassert lv5_t55([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t55([10]) == [10]"
+  },
+  {
+    "task_id": "L5_056",
+    "prompt": "from typing import List\n\ndef lv5_t56(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t56([]) == []\nassert lv5_t56([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t56([10]) == [10]"
+  },
+  {
+    "task_id": "L5_057",
+    "prompt": "from typing import List\n\ndef lv5_t57(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t57([]) == []\nassert lv5_t57([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t57([10]) == [10]"
+  },
+  {
+    "task_id": "L5_058",
+    "prompt": "from typing import List\n\ndef lv5_t58(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t58([]) == []\nassert lv5_t58([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t58([10]) == [10]"
+  },
+  {
+    "task_id": "L5_059",
+    "prompt": "from typing import List\n\ndef lv5_t59(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t59([]) == []\nassert lv5_t59([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t59([10]) == [10]"
+  },
+  {
+    "task_id": "L5_060",
+    "prompt": "from typing import List\n\ndef lv5_t60(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t60([]) == []\nassert lv5_t60([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t60([10]) == [10]"
+  },
+  {
+    "task_id": "L5_061",
+    "prompt": "from typing import List\n\ndef lv5_t61(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t61([]) == []\nassert lv5_t61([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t61([10]) == [10]"
+  },
+  {
+    "task_id": "L5_062",
+    "prompt": "from typing import List\n\ndef lv5_t62(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t62([]) == []\nassert lv5_t62([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t62([10]) == [10]"
+  },
+  {
+    "task_id": "L5_063",
+    "prompt": "from typing import List\n\ndef lv5_t63(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t63([]) == []\nassert lv5_t63([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t63([10]) == [10]"
+  },
+  {
+    "task_id": "L5_064",
+    "prompt": "from typing import List\n\ndef lv5_t64(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t64([]) == []\nassert lv5_t64([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t64([10]) == [10]"
+  },
+  {
+    "task_id": "L5_065",
+    "prompt": "from typing import List\n\ndef lv5_t65(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t65([]) == []\nassert lv5_t65([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t65([10]) == [10]"
+  },
+  {
+    "task_id": "L5_066",
+    "prompt": "from typing import List\n\ndef lv5_t66(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t66([]) == []\nassert lv5_t66([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t66([10]) == [10]"
+  },
+  {
+    "task_id": "L5_067",
+    "prompt": "from typing import List\n\ndef lv5_t67(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t67([]) == []\nassert lv5_t67([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t67([10]) == [10]"
+  },
+  {
+    "task_id": "L5_068",
+    "prompt": "from typing import List\n\ndef lv5_t68(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t68([]) == []\nassert lv5_t68([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t68([10]) == [10]"
+  },
+  {
+    "task_id": "L5_069",
+    "prompt": "from typing import List\n\ndef lv5_t69(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t69([]) == []\nassert lv5_t69([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t69([10]) == [10]"
+  },
+  {
+    "task_id": "L5_070",
+    "prompt": "from typing import List\n\ndef lv5_t70(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t70([]) == []\nassert lv5_t70([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t70([10]) == [10]"
+  },
+  {
+    "task_id": "L5_071",
+    "prompt": "from typing import List\n\ndef lv5_t71(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t71([]) == []\nassert lv5_t71([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t71([10]) == [10]"
+  },
+  {
+    "task_id": "L5_072",
+    "prompt": "from typing import List\n\ndef lv5_t72(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t72([]) == []\nassert lv5_t72([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t72([10]) == [10]"
+  },
+  {
+    "task_id": "L5_073",
+    "prompt": "from typing import List\n\ndef lv5_t73(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t73([]) == []\nassert lv5_t73([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t73([10]) == [10]"
+  },
+  {
+    "task_id": "L5_074",
+    "prompt": "from typing import List\n\ndef lv5_t74(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t74([]) == []\nassert lv5_t74([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t74([10]) == [10]"
+  },
+  {
+    "task_id": "L5_075",
+    "prompt": "from typing import List\n\ndef lv5_t75(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t75([]) == []\nassert lv5_t75([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t75([10]) == [10]"
+  },
+  {
+    "task_id": "L5_076",
+    "prompt": "from typing import List\n\ndef lv5_t76(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t76([]) == []\nassert lv5_t76([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t76([10]) == [10]"
+  },
+  {
+    "task_id": "L5_077",
+    "prompt": "from typing import List\n\ndef lv5_t77(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t77([]) == []\nassert lv5_t77([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t77([10]) == [10]"
+  },
+  {
+    "task_id": "L5_078",
+    "prompt": "from typing import List\n\ndef lv5_t78(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t78([]) == []\nassert lv5_t78([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t78([10]) == [10]"
+  },
+  {
+    "task_id": "L5_079",
+    "prompt": "from typing import List\n\ndef lv5_t79(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t79([]) == []\nassert lv5_t79([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t79([10]) == [10]"
+  },
+  {
+    "task_id": "L5_080",
+    "prompt": "from typing import List\n\ndef lv5_t80(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t80([]) == []\nassert lv5_t80([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t80([10]) == [10]"
+  },
+  {
+    "task_id": "L5_081",
+    "prompt": "from typing import List\n\ndef lv5_t81(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t81([]) == []\nassert lv5_t81([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t81([10]) == [10]"
+  },
+  {
+    "task_id": "L5_082",
+    "prompt": "from typing import List\n\ndef lv5_t82(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t82([]) == []\nassert lv5_t82([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t82([10]) == [10]"
+  },
+  {
+    "task_id": "L5_083",
+    "prompt": "from typing import List\n\ndef lv5_t83(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t83([]) == []\nassert lv5_t83([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t83([10]) == [10]"
+  },
+  {
+    "task_id": "L5_084",
+    "prompt": "from typing import List\n\ndef lv5_t84(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t84([]) == []\nassert lv5_t84([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t84([10]) == [10]"
+  },
+  {
+    "task_id": "L5_085",
+    "prompt": "from typing import List\n\ndef lv5_t85(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t85([]) == []\nassert lv5_t85([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t85([10]) == [10]"
+  },
+  {
+    "task_id": "L5_086",
+    "prompt": "from typing import List\n\ndef lv5_t86(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t86([]) == []\nassert lv5_t86([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t86([10]) == [10]"
+  },
+  {
+    "task_id": "L5_087",
+    "prompt": "from typing import List\n\ndef lv5_t87(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t87([]) == []\nassert lv5_t87([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t87([10]) == [10]"
+  },
+  {
+    "task_id": "L5_088",
+    "prompt": "from typing import List\n\ndef lv5_t88(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t88([]) == []\nassert lv5_t88([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t88([10]) == [10]"
+  },
+  {
+    "task_id": "L5_089",
+    "prompt": "from typing import List\n\ndef lv5_t89(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t89([]) == []\nassert lv5_t89([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t89([10]) == [10]"
+  },
+  {
+    "task_id": "L5_090",
+    "prompt": "from typing import List\n\ndef lv5_t90(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t90([]) == []\nassert lv5_t90([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t90([10]) == [10]"
+  },
+  {
+    "task_id": "L5_091",
+    "prompt": "from typing import List\n\ndef lv5_t91(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t91([]) == []\nassert lv5_t91([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t91([10]) == [10]"
+  },
+  {
+    "task_id": "L5_092",
+    "prompt": "from typing import List\n\ndef lv5_t92(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t92([]) == []\nassert lv5_t92([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t92([10]) == [10]"
+  },
+  {
+    "task_id": "L5_093",
+    "prompt": "from typing import List\n\ndef lv5_t93(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t93([]) == []\nassert lv5_t93([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t93([10]) == [10]"
+  },
+  {
+    "task_id": "L5_094",
+    "prompt": "from typing import List\n\ndef lv5_t94(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t94([]) == []\nassert lv5_t94([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t94([10]) == [10]"
+  },
+  {
+    "task_id": "L5_095",
+    "prompt": "from typing import List\n\ndef lv5_t95(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t95([]) == []\nassert lv5_t95([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t95([10]) == [10]"
+  },
+  {
+    "task_id": "L5_096",
+    "prompt": "from typing import List\n\ndef lv5_t96(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 1 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t96([]) == []\nassert lv5_t96([1,2,3,4]) == [2, 3, 4, 1]\nassert lv5_t96([10]) == [10]"
+  },
+  {
+    "task_id": "L5_097",
+    "prompt": "from typing import List\n\ndef lv5_t97(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 2 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t97([]) == []\nassert lv5_t97([1,2,3,4]) == [3, 4, 1, 2]\nassert lv5_t97([10]) == [10]"
+  },
+  {
+    "task_id": "L5_098",
+    "prompt": "from typing import List\n\ndef lv5_t98(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 3 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t98([]) == []\nassert lv5_t98([1,2,3,4]) == [4, 1, 2, 3]\nassert lv5_t98([10]) == [10]"
+  },
+  {
+    "task_id": "L5_099",
+    "prompt": "from typing import List\n\ndef lv5_t99(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 4 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t99([]) == []\nassert lv5_t99([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t99([10]) == [10]"
+  },
+  {
+    "task_id": "L5_100",
+    "prompt": "from typing import List\n\ndef lv5_t100(nums: List[int]) -> List[int]:\n    \"\"\"Return nums rotated left by 0 (wrap); empty unchanged.\"\"\"\n",
+    "test_cases": "assert lv5_t100([]) == []\nassert lv5_t100([1,2,3,4]) == [1, 2, 3, 4]\nassert lv5_t100([10]) == [10]"
+  }
+]

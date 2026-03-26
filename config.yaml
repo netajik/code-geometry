@@ -1,0 +1,104 @@
+# =============================================================================
+# Code Geometry Pipeline Configuration
+# =============================================================================
+# Manifold-style analysis for code generation: extract activations from a
+# code-capable LLM on code tasks, evaluate correctness, analyze error geometry.
+#
+# BEFORE RUNNING: Set model.name and paths for your machine (see RUN.md).
+# =============================================================================
+
+model:
+  # Colab + Google Drive (mount Drive first): model weights on persistent Drive.
+  # Local Mac override example: /Users/<you>/Documents/mi/models/CodeLlama-7b-hf
+  name: /content/drive/MyDrive/models/CodeLlama-7b-hf
+  dtype: bfloat16
+  num_layers: 32
+  hidden_dim: 4096
+  # layers: [4, 8, 12, 16, 20, 24, 28, 31]  # denser sweep (more disk/memory/time)
+  layers: [4, 8, 16, 24, 31]
+
+# Dataset: generic. Only 'source' + params for that source are used.
+# source: json_levels -> levels: { 1: path, ... }; run_levels: [1,3] or null for all
+# source: json         -> json_path (required), max_problems; further keys below
+# source: huggingface  -> hf_repo (required), hf_split (HF API name), max_problems; see docs/datasets.md
+# For json/huggingface: level_run_id overrides default batch id for outputs when set
+dataset:
+  source: json_levels
+  levels:
+    1: data/levels/level1.json
+    2: data/levels/level2.json
+    3: data/levels/level3.json
+    4: data/levels/level4.json
+    5: data/levels/level5.json
+  # null or omit = run every key in levels. List = only those levels, e.g. [3] or [1, 2, 5]
+  run_levels: null
+  # null = all tasks per level (100 in bundled level*.json after running generate script). Set a number to cap.
+  max_problems: null
+  seed: 42
+
+generation:
+  # Reduce to 1–4 on OOM (Colab). 8 speeds throughput when VRAM allows (e.g. CodeLlama 7B bf16).
+  batch_size: 8
+  max_new_tokens: 512
+  temperature: 0.0   # greedy
+
+evaluation:
+  timeout_seconds: 5
+  # Run generated code in sandbox and check test_cases (implement in pipeline)
+
+storage:
+  activation_dtype: float32
+
+# Phase A (embeddings): t-SNE when min_tsne_samples <= n <= 2000 (needs 30+ samples per level for default).
+phase_a:
+  min_tsne_samples: 30
+
+# Phase B: label factors vs correctness; pairwise Pearson + residualization (see phase_b_deconfounding.py).
+phase_b:
+  confound_r_warn: 0.25
+  confound_r_severe: 0.45
+  # OLS residualize other correlation columns w.r.t. these (intercept + standardized); same defaults as phase_c.nuisance_columns.
+  residualize_wrt_columns: [prompt_len, num_test_lines]
+  r_report_threshold: 0.1
+  spearman_top_k: 20
+  # Wrong-only pairwise runs whenever n_wrong ≥ this (excludes constant correct_f).
+  min_rows_wrong_only_pairwise: 15
+  # Override of columns in order (must exist in joint table):
+  # correlation_columns: [prompt_len, prompt_n_lines, num_test_lines, is_code_stub, entry_point_code, error_category_code, correct_f]
+  # Wrong-only column list override (default drops correct_f only):
+  # correlation_columns_wrong_only: [prompt_len, prompt_n_lines, num_test_lines, is_code_stub, entry_point_code, error_category_code]
+
+# Phase C: permutation null — higher = stabler 99th percentile at α=0.01 (slower). Pilot: 50–100.
+phase_c:
+  n_permutations: 200
+  min_population: 20
+  # Per-dimension linear nuisance removal (lstsq) before SVD; keep aligned with phase_b.residualize_wrt_columns when possible.
+  nuisance_columns: [prompt_len, num_test_lines]
+  # Stratified null: shuffle labels within prompt-length quantiles (reduces “just length” null).
+  stratified_permutation: true
+  stratified_n_bins: 10
+  # Bootstrap stability of top eigenvalue² on each slice (lower bootstrap_rel_std ⇒ stabler direction).
+  bootstrap_stability: true
+  bootstrap_n: 30
+  bootstrap_frac: 0.85
+
+# Phase D: LDA — lead with this for “linear separability” claims; shuffle_null_n = null draws for p-value.
+phase_d:
+  cv_folds: 5
+  shuffle_null_n: 200
+  min_per_class: 15
+  # Defaults to phase_c.nuisance_columns if omitted.
+  nuisance_columns: [prompt_len, num_test_lines]
+
+# Fourier: low-frequency power of per-row L2 norms across layers vs layer-order null.
+fourier:
+  n_layer_permutations: 400
+  low_freq_bins_max: 3
+  min_samples: 20
+
+# All results (labels, logs, plots, activations, answers, phase_a/b/c) under these roots.
+# Colab: mount Drive first; point paths at your persistent results folder (e.g. code-geometry-results).
+# Local Mac example: ~/Google Drive/My Drive/code-geometry-results
+paths:
+  workspace: /content/drive/MyDrive/code-geometry-results
+  data_root: /content/drive/MyDrive/code-geometry-results/data

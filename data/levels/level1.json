@@ -1,0 +1,502 @@
+[
+  {
+    "task_id": "L1_001",
+    "prompt": "def lv1_t01(x):\n    \"\"\"Return x plus 4.\"\"\"\n",
+    "test_cases": "assert lv1_t01(0) == 4\nassert lv1_t01(-2) == 2"
+  },
+  {
+    "task_id": "L1_002",
+    "prompt": "def lv1_t02(x):\n    \"\"\"Return 4 times x.\"\"\"\n",
+    "test_cases": "assert lv1_t02(0) == 0\nassert lv1_t02(3) == 12"
+  },
+  {
+    "task_id": "L1_003",
+    "prompt": "def lv1_t03(a, b):\n    \"\"\"Return True iff a equals b.\"\"\"\n",
+    "test_cases": "assert lv1_t03(1, 1) is True\nassert lv1_t03(1, 2) is False"
+  },
+  {
+    "task_id": "L1_004",
+    "prompt": "def lv1_t04(s):\n    \"\"\"Return length of s.\"\"\"\n",
+    "test_cases": "assert lv1_t04('') == 0\nassert lv1_t04('abc') == 3"
+  },
+  {
+    "task_id": "L1_005",
+    "prompt": "def lv1_t05(x):\n    \"\"\"Return absolute value of x.\"\"\"\n",
+    "test_cases": "assert lv1_t05(-5) == 5\nassert lv1_t05(5) == 5"
+  },
+  {
+    "task_id": "L1_006",
+    "prompt": "def lv1_t06(x):\n    \"\"\"Return x plus 9.\"\"\"\n",
+    "test_cases": "assert lv1_t06(0) == 9\nassert lv1_t06(-2) == 7"
+  },
+  {
+    "task_id": "L1_007",
+    "prompt": "def lv1_t07(x):\n    \"\"\"Return 14 times x.\"\"\"\n",
+    "test_cases": "assert lv1_t07(0) == 0\nassert lv1_t07(3) == 42"
+  },
+  {
+    "task_id": "L1_008",
+    "prompt": "def lv1_t08(a, b):\n    \"\"\"Return True iff a equals b.\"\"\"\n",
+    "test_cases": "assert lv1_t08(1, 1) is True\nassert lv1_t08(1, 2) is False"
+  },
+  {
+    "task_id": "L1_009",
+    "prompt": "def lv1_t09(s):\n    \"\"\"Return length of s.\"\"\"\n",
+    "test_cases": "assert lv1_t09('') == 0\nassert lv1_t09('abc') == 3"
+  },
+  {
+    "task_id": "L1_010",
+    "prompt": "def lv1_t10(x):\n    \"\"\"Return absolute value of x.\"\"\"\n",
+    "test_cases": "assert lv1_t10(-10) == 10\nassert lv1_t10(10) == 10"
+  },
+  {
+    "task_id": "L1_011",
+    "prompt": "def lv1_t11(x):\n    \"\"\"Return x plus 14.\"\"\"\n",
+    "test_cases": "assert lv1_t11(0) == 14\nassert lv1_t11(-2) == 12"
+  },
+  {
+    "task_id": "L1_012",
+    "prompt": "def lv1_t12(x):\n    \"\"\"Return 24 times x.\"\"\"\n",
+    "test_cases": "assert lv1_t12(0) == 0\nassert lv1_t12(3) == 72"
+  },
+  {
+    "task_id": "L1_013",
+    "prompt": "def lv1_t13(a, b):\n    \"\"\"Return True iff a equals b.\"\"\"\n",
+    "test_cases": "assert lv1_t13(1, 1) is True\nassert lv1_t13(1, 2) is False"
+  },
+  {
+    "task_id": "L1_014",
+    "prompt": "def lv1_t14(s):\n    \"\"\"Return length of s.\"\"\"\n",
+    "test_cases": "assert lv1_t14('') == 0\nassert lv1_t14('abc') == 3"
+  },
+  {
+    "task_id": "L1_015",
+    "prompt": "def lv1_t15(x):\n    \"\"\"Return absolute value of x.\"\"\"\n",
+    "test_cases": "assert lv1_t15(-15) == 15\nassert lv1_t15(15) == 15"
+  },
+  {
+    "task_id": "L1_016",
+    "prompt": "def lv1_t16(x):\n    \"\"\"Return (16 * x) + 23.\"\"\"\n",
+    "test_cases": "assert lv1_t16(0) == 23\nassert lv1_t16(1) == 39\nassert lv1_t16(-1) == 7"
+  },
+  {
+    "task_id": "L1_017",
+    "prompt": "def lv1_t17(x):\n    \"\"\"Return (17 * x) + 24.\"\"\"\n",
+    "test_cases": "assert lv1_t17(0) == 24\nassert lv1_t17(1) == 41\nassert lv1_t17(-1) == 7"
+  },
+  {
+    "task_id": "L1_018",
+    "prompt": "def lv1_t18(x):\n    \"\"\"Return (18 * x) + 25.\"\"\"\n",
+    "test_cases": "assert lv1_t18(0) == 25\nassert lv1_t18(1) == 43\nassert lv1_t18(-1) == 7"
+  },
+  {
+    "task_id": "L1_019",
+    "prompt": "def lv1_t19(x):\n    \"\"\"Return (19 * x) + 26.\"\"\"\n",
+    "test_cases": "assert lv1_t19(0) == 26\nassert lv1_t19(1) == 45\nassert lv1_t19(-1) == 7"
+  },
+  {
+    "task_id": "L1_020",
+    "prompt": "def lv1_t20(x):\n    \"\"\"Return (20 * x) + 27.\"\"\"\n",
+    "test_cases": "assert lv1_t20(0) == 27\nassert lv1_t20(1) == 47\nassert lv1_t20(-1) == 7"
+  },
+  {
+    "task_id": "L1_021",
+    "prompt": "def lv1_t21(x):\n    \"\"\"Return (21 * x) + 28.\"\"\"\n",
+    "test_cases": "assert lv1_t21(0) == 28\nassert lv1_t21(1) == 49\nassert lv1_t21(-1) == 7"
+  },
+  {
+    "task_id": "L1_022",
+    "prompt": "def lv1_t22(x):\n    \"\"\"Return (22 * x) + 29.\"\"\"\n",
+    "test_cases": "assert lv1_t22(0) == 29\nassert lv1_t22(1) == 51\nassert lv1_t22(-1) == 7"
+  },
+  {
+    "task_id": "L1_023",
+    "prompt": "def lv1_t23(x):\n    \"\"\"Return (23 * x) + 30.\"\"\"\n",
+    "test_cases": "assert lv1_t23(0) == 30\nassert lv1_t23(1) == 53\nassert lv1_t23(-1) == 7"
+  },
+  {
+    "task_id": "L1_024",
+    "prompt": "def lv1_t24(x):\n    \"\"\"Return (24 * x) + 31.\"\"\"\n",
+    "test_cases": "assert lv1_t24(0) == 31\nassert lv1_t24(1) == 55\nassert lv1_t24(-1) == 7"
+  },
+  {
+    "task_id": "L1_025",
+    "prompt": "def lv1_t25(x):\n    \"\"\"Return (25 * x) + 32.\"\"\"\n",
+    "test_cases": "assert lv1_t25(0) == 32\nassert lv1_t25(1) == 57\nassert lv1_t25(-1) == 7"
+  },
+  {
+    "task_id": "L1_026",
+    "prompt": "def lv1_t26(x):\n    \"\"\"Return (26 * x) + 33.\"\"\"\n",
+    "test_cases": "assert lv1_t26(0) == 33\nassert lv1_t26(1) == 59\nassert lv1_t26(-1) == 7"
+  },
+  {
+    "task_id": "L1_027",
+    "prompt": "def lv1_t27(x):\n    \"\"\"Return (27 * x) + 34.\"\"\"\n",
+    "test_cases": "assert lv1_t27(0) == 34\nassert lv1_t27(1) == 61\nassert lv1_t27(-1) == 7"
+  },
+  {
+    "task_id": "L1_028",
+    "prompt": "def lv1_t28(x):\n    \"\"\"Return (28 * x) + 35.\"\"\"\n",
+    "test_cases": "assert lv1_t28(0) == 35\nassert lv1_t28(1) == 63\nassert lv1_t28(-1) == 7"
+  },
+  {
+    "task_id": "L1_029",
+    "prompt": "def lv1_t29(x):\n    \"\"\"Return (29 * x) + 36.\"\"\"\n",
+    "test_cases": "assert lv1_t29(0) == 36\nassert lv1_t29(1) == 65\nassert lv1_t29(-1) == 7"
+  },
+  {
+    "task_id": "L1_030",
+    "prompt": "def lv1_t30(x):\n    \"\"\"Return (30 * x) + 37.\"\"\"\n",
+    "test_cases": "assert lv1_t30(0) == 37\nassert lv1_t30(1) == 67\nassert lv1_t30(-1) == 7"
+  },
+  {
+    "task_id": "L1_031",
+    "prompt": "def lv1_t31(x):\n    \"\"\"Return (31 * x) + 38.\"\"\"\n",
+    "test_cases": "assert lv1_t31(0) == 38\nassert lv1_t31(1) == 69\nassert lv1_t31(-1) == 7"
+  },
+  {
+    "task_id": "L1_032",
+    "prompt": "def lv1_t32(x):\n    \"\"\"Return (32 * x) + 39.\"\"\"\n",
+    "test_cases": "assert lv1_t32(0) == 39\nassert lv1_t32(1) == 71\nassert lv1_t32(-1) == 7"
+  },
+  {
+    "task_id": "L1_033",
+    "prompt": "def lv1_t33(x):\n    \"\"\"Return (33 * x) + 40.\"\"\"\n",
+    "test_cases": "assert lv1_t33(0) == 40\nassert lv1_t33(1) == 73\nassert lv1_t33(-1) == 7"
+  },
+  {
+    "task_id": "L1_034",
+    "prompt": "def lv1_t34(x):\n    \"\"\"Return (34 * x) + 41.\"\"\"\n",
+    "test_cases": "assert lv1_t34(0) == 41\nassert lv1_t34(1) == 75\nassert lv1_t34(-1) == 7"
+  },
+  {
+    "task_id": "L1_035",
+    "prompt": "def lv1_t35(x):\n    \"\"\"Return (35 * x) + 42.\"\"\"\n",
+    "test_cases": "assert lv1_t35(0) == 42\nassert lv1_t35(1) == 77\nassert lv1_t35(-1) == 7"
+  },
+  {
+    "task_id": "L1_036",
+    "prompt": "def lv1_t36(x):\n    \"\"\"Return (36 * x) + 43.\"\"\"\n",
+    "test_cases": "assert lv1_t36(0) == 43\nassert lv1_t36(1) == 79\nassert lv1_t36(-1) == 7"
+  },
+  {
+    "task_id": "L1_037",
+    "prompt": "def lv1_t37(x):\n    \"\"\"Return (37 * x) + 44.\"\"\"\n",
+    "test_cases": "assert lv1_t37(0) == 44\nassert lv1_t37(1) == 81\nassert lv1_t37(-1) == 7"
+  },
+  {
+    "task_id": "L1_038",
+    "prompt": "def lv1_t38(x):\n    \"\"\"Return (38 * x) + 45.\"\"\"\n",
+    "test_cases": "assert lv1_t38(0) == 45\nassert lv1_t38(1) == 83\nassert lv1_t38(-1) == 7"
+  },
+  {
+    "task_id": "L1_039",
+    "prompt": "def lv1_t39(x):\n    \"\"\"Return (39 * x) + 46.\"\"\"\n",
+    "test_cases": "assert lv1_t39(0) == 46\nassert lv1_t39(1) == 85\nassert lv1_t39(-1) == 7"
+  },
+  {
+    "task_id": "L1_040",
+    "prompt": "def lv1_t40(x):\n    \"\"\"Return (40 * x) + 47.\"\"\"\n",
+    "test_cases": "assert lv1_t40(0) == 47\nassert lv1_t40(1) == 87\nassert lv1_t40(-1) == 7"
+  },
+  {
+    "task_id": "L1_041",
+    "prompt": "def lv1_t41(x):\n    \"\"\"Return (41 * x) + 48.\"\"\"\n",
+    "test_cases": "assert lv1_t41(0) == 48\nassert lv1_t41(1) == 89\nassert lv1_t41(-1) == 7"
+  },
+  {
+    "task_id": "L1_042",
+    "prompt": "def lv1_t42(x):\n    \"\"\"Return (42 * x) + 49.\"\"\"\n",
+    "test_cases": "assert lv1_t42(0) == 49\nassert lv1_t42(1) == 91\nassert lv1_t42(-1) == 7"
+  },
+  {
+    "task_id": "L1_043",
+    "prompt": "def lv1_t43(x):\n    \"\"\"Return (43 * x) + 50.\"\"\"\n",
+    "test_cases": "assert lv1_t43(0) == 50\nassert lv1_t43(1) == 93\nassert lv1_t43(-1) == 7"
+  },
+  {
+    "task_id": "L1_044",
+    "prompt": "def lv1_t44(x):\n    \"\"\"Return (44 * x) + 51.\"\"\"\n",
+    "test_cases": "assert lv1_t44(0) == 51\nassert lv1_t44(1) == 95\nassert lv1_t44(-1) == 7"
+  },
+  {
+    "task_id": "L1_045",
+    "prompt": "def lv1_t45(x):\n    \"\"\"Return (45 * x) + 52.\"\"\"\n",
+    "test_cases": "assert lv1_t45(0) == 52\nassert lv1_t45(1) == 97\nassert lv1_t45(-1) == 7"
+  },
+  {
+    "task_id": "L1_046",
+    "prompt": "def lv1_t46(x):\n    \"\"\"Return (46 * x) + 53.\"\"\"\n",
+    "test_cases": "assert lv1_t46(0) == 53\nassert lv1_t46(1) == 99\nassert lv1_t46(-1) == 7"
+  },
+  {
+    "task_id": "L1_047",
+    "prompt": "def lv1_t47(x):\n    \"\"\"Return (47 * x) + 54.\"\"\"\n",
+    "test_cases": "assert lv1_t47(0) == 54\nassert lv1_t47(1) == 101\nassert lv1_t47(-1) == 7"
+  },
+  {
+    "task_id": "L1_048",
+    "prompt": "def lv1_t48(x):\n    \"\"\"Return (48 * x) + 55.\"\"\"\n",
+    "test_cases": "assert lv1_t48(0) == 55\nassert lv1_t48(1) == 103\nassert lv1_t48(-1) == 7"
+  },
+  {
+    "task_id": "L1_049",
+    "prompt": "def lv1_t49(x):\n    \"\"\"Return (49 * x) + 56.\"\"\"\n",
+    "test_cases": "assert lv1_t49(0) == 56\nassert lv1_t49(1) == 105\nassert lv1_t49(-1) == 7"
+  },
+  {
+    "task_id": "L1_050",
+    "prompt": "def lv1_t50(x):\n    \"\"\"Return (50 * x) + 57.\"\"\"\n",
+    "test_cases": "assert lv1_t50(0) == 57\nassert lv1_t50(1) == 107\nassert lv1_t50(-1) == 7"
+  },
+  {
+    "task_id": "L1_051",
+    "prompt": "def lv1_t51(x):\n    \"\"\"Return (51 * x) + 58.\"\"\"\n",
+    "test_cases": "assert lv1_t51(0) == 58\nassert lv1_t51(1) == 109\nassert lv1_t51(-1) == 7"
+  },
+  {
+    "task_id": "L1_052",
+    "prompt": "def lv1_t52(x):\n    \"\"\"Return (52 * x) + 59.\"\"\"\n",
+    "test_cases": "assert lv1_t52(0) == 59\nassert lv1_t52(1) == 111\nassert lv1_t52(-1) == 7"
+  },
+  {
+    "task_id": "L1_053",
+    "prompt": "def lv1_t53(x):\n    \"\"\"Return (53 * x) + 60.\"\"\"\n",
+    "test_cases": "assert lv1_t53(0) == 60\nassert lv1_t53(1) == 113\nassert lv1_t53(-1) == 7"
+  },
+  {
+    "task_id": "L1_054",
+    "prompt": "def lv1_t54(x):\n    \"\"\"Return (54 * x) + 61.\"\"\"\n",
+    "test_cases": "assert lv1_t54(0) == 61\nassert lv1_t54(1) == 115\nassert lv1_t54(-1) == 7"
+  },
+  {
+    "task_id": "L1_055",
+    "prompt": "def lv1_t55(x):\n    \"\"\"Return (55 * x) + 62.\"\"\"\n",
+    "test_cases": "assert lv1_t55(0) == 62\nassert lv1_t55(1) == 117\nassert lv1_t55(-1) == 7"
+  },
+  {
+    "task_id": "L1_056",
+    "prompt": "def lv1_t56(x):\n    \"\"\"Return (56 * x) + 63.\"\"\"\n",
+    "test_cases": "assert lv1_t56(0) == 63\nassert lv1_t56(1) == 119\nassert lv1_t56(-1) == 7"
+  },
+  {
+    "task_id": "L1_057",
+    "prompt": "def lv1_t57(x):\n    \"\"\"Return (57 * x) + 64.\"\"\"\n",
+    "test_cases": "assert lv1_t57(0) == 64\nassert lv1_t57(1) == 121\nassert lv1_t57(-1) == 7"
+  },
+  {
+    "task_id": "L1_058",
+    "prompt": "def lv1_t58(x):\n    \"\"\"Return (58 * x) + 65.\"\"\"\n",
+    "test_cases": "assert lv1_t58(0) == 65\nassert lv1_t58(1) == 123\nassert lv1_t58(-1) == 7"
+  },
+  {
+    "task_id": "L1_059",
+    "prompt": "def lv1_t59(x):\n    \"\"\"Return (59 * x) + 66.\"\"\"\n",
+    "test_cases": "assert lv1_t59(0) == 66\nassert lv1_t59(1) == 125\nassert lv1_t59(-1) == 7"
+  },
+  {
+    "task_id": "L1_060",
+    "prompt": "def lv1_t60(x):\n    \"\"\"Return (60 * x) + 67.\"\"\"\n",
+    "test_cases": "assert lv1_t60(0) == 67\nassert lv1_t60(1) == 127\nassert lv1_t60(-1) == 7"
+  },
+  {
+    "task_id": "L1_061",
+    "prompt": "def lv1_t61(x):\n    \"\"\"Return (61 * x) + 68.\"\"\"\n",
+    "test_cases": "assert lv1_t61(0) == 68\nassert lv1_t61(1) == 129\nassert lv1_t61(-1) == 7"
+  },
+  {
+    "task_id": "L1_062",
+    "prompt": "def lv1_t62(x):\n    \"\"\"Return (62 * x) + 69.\"\"\"\n",
+    "test_cases": "assert lv1_t62(0) == 69\nassert lv1_t62(1) == 131\nassert lv1_t62(-1) == 7"
+  },
+  {
+    "task_id": "L1_063",
+    "prompt": "def lv1_t63(x):\n    \"\"\"Return (63 * x) + 70.\"\"\"\n",
+    "test_cases": "assert lv1_t63(0) == 70\nassert lv1_t63(1) == 133\nassert lv1_t63(-1) == 7"
+  },
+  {
+    "task_id": "L1_064",
+    "prompt": "def lv1_t64(x):\n    \"\"\"Return (64 * x) + 71.\"\"\"\n",
+    "test_cases": "assert lv1_t64(0) == 71\nassert lv1_t64(1) == 135\nassert lv1_t64(-1) == 7"
+  },
+  {
+    "task_id": "L1_065",
+    "prompt": "def lv1_t65(x):\n    \"\"\"Return (65 * x) + 72.\"\"\"\n",
+    "test_cases": "assert lv1_t65(0) == 72\nassert lv1_t65(1) == 137\nassert lv1_t65(-1) == 7"
+  },
+  {
+    "task_id": "L1_066",
+    "prompt": "def lv1_t66(x):\n    \"\"\"Return (66 * x) + 73.\"\"\"\n",
+    "test_cases": "assert lv1_t66(0) == 73\nassert lv1_t66(1) == 139\nassert lv1_t66(-1) == 7"
+  },
+  {
+    "task_id": "L1_067",
+    "prompt": "def lv1_t67(x):\n    \"\"\"Return (67 * x) + 74.\"\"\"\n",
+    "test_cases": "assert lv1_t67(0) == 74\nassert lv1_t67(1) == 141\nassert lv1_t67(-1) == 7"
+  },
+  {
+    "task_id": "L1_068",
+    "prompt": "def lv1_t68(x):\n    \"\"\"Return (68 * x) + 75.\"\"\"\n",
+    "test_cases": "assert lv1_t68(0) == 75\nassert lv1_t68(1) == 143\nassert lv1_t68(-1) == 7"
+  },
+  {
+    "task_id": "L1_069",
+    "prompt": "def lv1_t69(x):\n    \"\"\"Return (69 * x) + 76.\"\"\"\n",
+    "test_cases": "assert lv1_t69(0) == 76\nassert lv1_t69(1) == 145\nassert lv1_t69(-1) == 7"
+  },
+  {
+    "task_id": "L1_070",
+    "prompt": "def lv1_t70(x):\n    \"\"\"Return (70 * x) + 77.\"\"\"\n",
+    "test_cases": "assert lv1_t70(0) == 77\nassert lv1_t70(1) == 147\nassert lv1_t70(-1) == 7"
+  },
+  {
+    "task_id": "L1_071",
+    "prompt": "def lv1_t71(x):\n    \"\"\"Return (71 * x) + 78.\"\"\"\n",
+    "test_cases": "assert lv1_t71(0) == 78\nassert lv1_t71(1) == 149\nassert lv1_t71(-1) == 7"
+  },
+  {
+    "task_id": "L1_072",
+    "prompt": "def lv1_t72(x):\n    \"\"\"Return (72 * x) + 79.\"\"\"\n",
+    "test_cases": "assert lv1_t72(0) == 79\nassert lv1_t72(1) == 151\nassert lv1_t72(-1) == 7"
+  },
+  {
+    "task_id": "L1_073",
+    "prompt": "def lv1_t73(x):\n    \"\"\"Return (73 * x) + 80.\"\"\"\n",
+    "test_cases": "assert lv1_t73(0) == 80\nassert lv1_t73(1) == 153\nassert lv1_t73(-1) == 7"
+  },
+  {
+    "task_id": "L1_074",
+    "prompt": "def lv1_t74(x):\n    \"\"\"Return (74 * x) + 81.\"\"\"\n",
+    "test_cases": "assert lv1_t74(0) == 81\nassert lv1_t74(1) == 155\nassert lv1_t74(-1) == 7"
+  },
+  {
+    "task_id": "L1_075",
+    "prompt": "def lv1_t75(x):\n    \"\"\"Return (75 * x) + 82.\"\"\"\n",
+    "test_cases": "assert lv1_t75(0) == 82\nassert lv1_t75(1) == 157\nassert lv1_t75(-1) == 7"
+  },
+  {
+    "task_id": "L1_076",
+    "prompt": "def lv1_t76(x):\n    \"\"\"Return (76 * x) + 83.\"\"\"\n",
+    "test_cases": "assert lv1_t76(0) == 83\nassert lv1_t76(1) == 159\nassert lv1_t76(-1) == 7"
+  },
+  {
+    "task_id": "L1_077",
+    "prompt": "def lv1_t77(x):\n    \"\"\"Return (77 * x) + 84.\"\"\"\n",
+    "test_cases": "assert lv1_t77(0) == 84\nassert lv1_t77(1) == 161\nassert lv1_t77(-1) == 7"
+  },
+  {
+    "task_id": "L1_078",
+    "prompt": "def lv1_t78(x):\n    \"\"\"Return (78 * x) + 85.\"\"\"\n",
+    "test_cases": "assert lv1_t78(0) == 85\nassert lv1_t78(1) == 163\nassert lv1_t78(-1) == 7"
+  },
+  {
+    "task_id": "L1_079",
+    "prompt": "def lv1_t79(x):\n    \"\"\"Return (79 * x) + 86.\"\"\"\n",
+    "test_cases": "assert lv1_t79(0) == 86\nassert lv1_t79(1) == 165\nassert lv1_t79(-1) == 7"
+  },
+  {
+    "task_id": "L1_080",
+    "prompt": "def lv1_t80(x):\n    \"\"\"Return (80 * x) + 87.\"\"\"\n",
+    "test_cases": "assert lv1_t80(0) == 87\nassert lv1_t80(1) == 167\nassert lv1_t80(-1) == 7"
+  },
+  {
+    "task_id": "L1_081",
+    "prompt": "def lv1_t81(x):\n    \"\"\"Return (81 * x) + 88.\"\"\"\n",
+    "test_cases": "assert lv1_t81(0) == 88\nassert lv1_t81(1) == 169\nassert lv1_t81(-1) == 7"
+  },
+  {
+    "task_id": "L1_082",
+    "prompt": "def lv1_t82(x):\n    \"\"\"Return (82 * x) + 89.\"\"\"\n",
+    "test_cases": "assert lv1_t82(0) == 89\nassert lv1_t82(1) == 171\nassert lv1_t82(-1) == 7"
+  },
+  {
+    "task_id": "L1_083",
+    "prompt": "def lv1_t83(x):\n    \"\"\"Return (83 * x) + 90.\"\"\"\n",
+    "test_cases": "assert lv1_t83(0) == 90\nassert lv1_t83(1) == 173\nassert lv1_t83(-1) == 7"
+  },
+  {
+    "task_id": "L1_084",
+    "prompt": "def lv1_t84(x):\n    \"\"\"Return (84 * x) + 91.\"\"\"\n",
+    "test_cases": "assert lv1_t84(0) == 91\nassert lv1_t84(1) == 175\nassert lv1_t84(-1) == 7"
+  },
+  {
+    "task_id": "L1_085",
+    "prompt": "def lv1_t85(x):\n    \"\"\"Return (85 * x) + 92.\"\"\"\n",
+    "test_cases": "assert lv1_t85(0) == 92\nassert lv1_t85(1) == 177\nassert lv1_t85(-1) == 7"
+  },
+  {
+    "task_id": "L1_086",
+    "prompt": "def lv1_t86(x):\n    \"\"\"Return (86 * x) + 93.\"\"\"\n",
+    "test_cases": "assert lv1_t86(0) == 93\nassert lv1_t86(1) == 179\nassert lv1_t86(-1) == 7"
+  },
+  {
+    "task_id": "L1_087",
+    "prompt": "def lv1_t87(x):\n    \"\"\"Return (87 * x) + 94.\"\"\"\n",
+    "test_cases": "assert lv1_t87(0) == 94\nassert lv1_t87(1) == 181\nassert lv1_t87(-1) == 7"
+  },
+  {
+    "task_id": "L1_088",
+    "prompt": "def lv1_t88(x):\n    \"\"\"Return (88 * x) + 95.\"\"\"\n",
+    "test_cases": "assert lv1_t88(0) == 95\nassert lv1_t88(1) == 183\nassert lv1_t88(-1) == 7"
+  },
+  {
+    "task_id": "L1_089",
+    "prompt": "def lv1_t89(x):\n    \"\"\"Return (89 * x) + 96.\"\"\"\n",
+    "test_cases": "assert lv1_t89(0) == 96\nassert lv1_t89(1) == 185\nassert lv1_t89(-1) == 7"
+  },
+  {
+    "task_id": "L1_090",
+    "prompt": "def lv1_t90(x):\n    \"\"\"Return (90 * x) + 97.\"\"\"\n",
+    "test_cases": "assert lv1_t90(0) == 97\nassert lv1_t90(1) == 187\nassert lv1_t90(-1) == 7"
+  },
+  {
+    "task_id": "L1_091",
+    "prompt": "def lv1_t91(x):\n    \"\"\"Return (91 * x) + 98.\"\"\"\n",
+    "test_cases": "assert lv1_t91(0) == 98\nassert lv1_t91(1) == 189\nassert lv1_t91(-1) == 7"
+  },
+  {
+    "task_id": "L1_092",
+    "prompt": "def lv1_t92(x):\n    \"\"\"Return (92 * x) + 99.\"\"\"\n",
+    "test_cases": "assert lv1_t92(0) == 99\nassert lv1_t92(1) == 191\nassert lv1_t92(-1) == 7"
+  },
+  {
+    "task_id": "L1_093",
+    "prompt": "def lv1_t93(x):\n    \"\"\"Return (93 * x) + 100.\"\"\"\n",
+    "test_cases": "assert lv1_t93(0) == 100\nassert lv1_t93(1) == 193\nassert lv1_t93(-1) == 7"
+  },
+  {
+    "task_id": "L1_094",
+    "prompt": "def lv1_t94(x):\n    \"\"\"Return (94 * x) + 101.\"\"\"\n",
+    "test_cases": "assert lv1_t94(0) == 101\nassert lv1_t94(1) == 195\nassert lv1_t94(-1) == 7"
+  },
+  {
+    "task_id": "L1_095",
+    "prompt": "def lv1_t95(x):\n    \"\"\"Return (95 * x) + 102.\"\"\"\n",
+    "test_cases": "assert lv1_t95(0) == 102\nassert lv1_t95(1) == 197\nassert lv1_t95(-1) == 7"
+  },
+  {
+    "task_id": "L1_096",
+    "prompt": "def lv1_t96(x):\n    \"\"\"Return (96 * x) + 103.\"\"\"\n",
+    "test_cases": "assert lv1_t96(0) == 103\nassert lv1_t96(1) == 199\nassert lv1_t96(-1) == 7"
+  },
+  {
+    "task_id": "L1_097",
+    "prompt": "def lv1_t97(x):\n    \"\"\"Return (97 * x) + 104.\"\"\"\n",
+    "test_cases": "assert lv1_t97(0) == 104\nassert lv1_t97(1) == 201\nassert lv1_t97(-1) == 7"
+  },
+  {
+    "task_id": "L1_098",
+    "prompt": "def lv1_t98(x):\n    \"\"\"Return (98 * x) + 105.\"\"\"\n",
+    "test_cases": "assert lv1_t98(0) == 105\nassert lv1_t98(1) == 203\nassert lv1_t98(-1) == 7"
+  },
+  {
+    "task_id": "L1_099",
+    "prompt": "def lv1_t99(x):\n    \"\"\"Return (99 * x) + 106.\"\"\"\n",
+    "test_cases": "assert lv1_t99(0) == 106\nassert lv1_t99(1) == 205\nassert lv1_t99(-1) == 7"
+  },
+  {
+    "task_id": "L1_100",
+    "prompt": "def lv1_t100(x):\n    \"\"\"Return (100 * x) + 107.\"\"\"\n",
+    "test_cases": "assert lv1_t100(0) == 107\nassert lv1_t100(1) == 207\nassert lv1_t100(-1) == 7"
+  }
+]

@@ -1,0 +1,120 @@
+2026-03-19 11:41:58,139 | INFO    | ============================================================
+2026-03-19 11:41:58,139 | INFO    | Code Geometry Pipeline
+2026-03-19 11:41:58,139 | INFO    | ============================================================
+2026-03-19 11:41:58,139 | INFO    | --- Loading code problems ---
+2026-03-19 11:41:58,139 | INFO    | Loaded JSON data/quick_test_problems.json: 15 problems
+2026-03-19 11:41:58,139 | INFO    | --- Computing labels ---
+2026-03-19 11:41:58,139 | INFO    | Split custom: computed 15 label sets
+2026-03-19 11:41:58,139 | INFO    | --- Saving datasets ---
+2026-03-19 11:41:58,140 | INFO    | Saved split_custom.json
+2026-03-19 11:41:58,140 | INFO    | --- Loading tokenizer ---
+2026-03-19 11:41:58,140 | INFO    | Loading tokenizer: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 11:42:01,207 | INFO    | --- Loading model ---
+2026-03-19 11:42:03,832 | INFO    | Loading model: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 11:42:14,626 | INFO    | Model loaded in 10.8s on mps:0
+2026-03-19 11:42:14,633 | INFO    | --- Extracting activations ---
+2026-03-19 11:42:14,636 | INFO    | Split custom: extracting 15 prompts x 8 layers
+2026-03-19 11:42:16,601 | INFO    | Split custom: extraction done in 2.0s
+2026-03-19 11:42:16,601 | INFO    | Activation extraction complete
+2026-03-19 11:42:16,601 | INFO    | --- Generating answers ---
+2026-03-19 11:42:16,601 | INFO    | Split custom: generating for 15 problems
+2026-03-19 11:44:33,500 | INFO    | ============================================================
+2026-03-19 11:44:33,500 | INFO    | Code Geometry Pipeline
+2026-03-19 11:44:33,500 | INFO    | ============================================================
+2026-03-19 11:44:33,500 | INFO    | --- Loading code problems ---
+2026-03-19 11:44:33,500 | INFO    | Loaded JSON data/quick_test_problems.json: 15 problems
+2026-03-19 11:44:33,500 | INFO    | --- Computing labels ---
+2026-03-19 11:44:33,500 | INFO    | Split custom: computed 15 label sets
+2026-03-19 11:44:33,500 | INFO    | --- Saving datasets ---
+2026-03-19 11:44:33,501 | INFO    | Saved split_custom.json
+2026-03-19 11:44:33,501 | INFO    | --- Loading tokenizer ---
+2026-03-19 11:44:33,502 | INFO    | Loading tokenizer: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 11:44:35,746 | INFO    | --- Loading model ---
+2026-03-19 11:44:37,605 | INFO    | Loading model: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 11:45:02,638 | INFO    | Model loaded in 25.0s on mps:0
+2026-03-19 11:45:02,642 | INFO    | --- Extracting activations ---
+2026-03-19 11:45:02,642 | INFO    | Split custom: extracting 15 prompts x 8 layers
+2026-03-19 11:45:08,861 | INFO    | Split custom: extraction done in 6.2s
+2026-03-19 11:45:08,861 | INFO    | Activation extraction complete
+2026-03-19 11:45:08,861 | INFO    | --- Generating answers ---
+2026-03-19 11:45:08,861 | INFO    | Split custom: generating for 15 problems
+2026-03-19 11:45:08,861 | INFO    | Running model.generate() in batches (batch_size=8, max_new_tokens=512) — wait for 'generation done' log.
+2026-03-19 11:47:15,108 | INFO    | ============================================================
+2026-03-19 11:47:15,109 | INFO    | Code Geometry Pipeline
+2026-03-19 11:47:15,109 | INFO    | ============================================================
+2026-03-19 11:47:15,109 | INFO    | --- Loading code problems ---
+2026-03-19 11:47:15,109 | INFO    | Loaded JSON data/quick_test_problems.json: 15 problems
+2026-03-19 11:47:15,109 | INFO    | --- Computing labels ---
+2026-03-19 11:47:15,109 | INFO    | Split custom: computed 15 label sets
+2026-03-19 11:47:15,109 | INFO    | --- Saving datasets ---
+2026-03-19 11:47:15,109 | INFO    | Saved split_custom.json
+2026-03-19 11:47:15,109 | INFO    | --- Loading tokenizer ---
+2026-03-19 11:47:15,109 | INFO    | Loading tokenizer: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 11:47:17,189 | INFO    | --- Loading model ---
+2026-03-19 11:47:18,962 | INFO    | Loading model: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 11:47:38,166 | INFO    | Model loaded in 19.2s on mps:0 (GPU/cuda: False, MPS: True)
+2026-03-19 11:47:38,168 | INFO    | --- Extracting activations ---
+2026-03-19 11:47:38,168 | INFO    | Split custom: extracting 15 prompts x 8 layers
+2026-03-19 11:47:45,030 | INFO    | Split custom: extraction done in 6.9s
+2026-03-19 11:47:45,030 | INFO    | Activation extraction complete
+2026-03-19 11:47:45,030 | INFO    | --- Generating answers ---
+2026-03-19 11:47:45,030 | INFO    | Split custom: generating for 15 problems
+2026-03-19 11:47:45,030 | INFO    | Running model.generate() in batches (batch_size=8, max_new_tokens=512) — wait for 'generation done' log.
+2026-03-19 12:00:07,611 | INFO    | ============================================================
+2026-03-19 12:00:07,611 | INFO    | Code Geometry Pipeline
+2026-03-19 12:00:07,611 | INFO    | ============================================================
+2026-03-19 12:00:07,611 | INFO    | --- Loading code problems ---
+2026-03-19 12:00:07,612 | INFO    | Loaded JSON data/quick_test_problems.json: 15 problems
+2026-03-19 12:00:07,612 | INFO    | --- Computing labels ---
+2026-03-19 12:00:07,612 | INFO    | Split custom: computed 15 label sets
+2026-03-19 12:00:07,612 | INFO    | --- Saving datasets ---
+2026-03-19 12:00:07,613 | INFO    | Saved split_custom.json
+2026-03-19 12:00:07,613 | INFO    | --- Loading tokenizer ---
+2026-03-19 12:00:07,613 | INFO    | Loading tokenizer: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 12:00:09,781 | INFO    | --- Loading model ---
+2026-03-19 12:00:11,571 | INFO    | Loading model: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 12:00:34,352 | INFO    | Model loaded in 22.8s on mps:0 (GPU/cuda: False, MPS: True)
+2026-03-19 12:00:34,355 | INFO    | --- Extracting activations ---
+2026-03-19 12:00:34,355 | INFO    | Split custom: extracting 15 prompts x 8 layers
+2026-03-19 12:04:56,119 | INFO    | ============================================================
+2026-03-19 12:04:56,119 | INFO    | Code Geometry Pipeline
+2026-03-19 12:04:56,119 | INFO    | ============================================================
+2026-03-19 12:04:56,119 | INFO    | --- Loading code problems ---
+2026-03-19 12:04:56,119 | INFO    | Loaded JSON data/quick_test_problems.json: 15 problems
+2026-03-19 12:04:56,120 | INFO    | --- Computing labels ---
+2026-03-19 12:04:56,120 | INFO    | Split custom: computed 15 label sets
+2026-03-19 12:04:56,120 | INFO    | --- Saving datasets ---
+2026-03-19 12:04:56,122 | INFO    | Saved split_custom.json
+2026-03-19 12:04:56,122 | INFO    | --- Loading tokenizer ---
+2026-03-19 12:04:56,122 | INFO    | Loading tokenizer: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 12:04:58,734 | INFO    | --- Loading model ---
+2026-03-19 12:05:01,254 | INFO    | Loading model: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 12:05:16,495 | INFO    | Model loaded in 15.2s on mps:0 (GPU/cuda: False, MPS: True)
+2026-03-19 12:05:16,499 | INFO    | --- Extracting activations ---
+2026-03-19 12:05:16,502 | INFO    | Split custom: extracting 15 prompts x 8 layers
+2026-03-19 12:05:18,213 | INFO    | Split custom: extraction done in 1.7s
+2026-03-19 12:05:18,213 | INFO    | Activation extraction complete
+2026-03-19 12:05:18,213 | INFO    | --- Generating answers ---
+2026-03-19 12:05:18,213 | INFO    | Split custom: generating for 15 problems
+2026-03-19 12:05:18,213 | INFO    | Running model.generate() in batches (batch_size=8, max_new_tokens=512) — wait for 'generation done' log.
+2026-03-19 12:11:48,430 | INFO    | ============================================================
+2026-03-19 12:11:48,430 | INFO    | Code Geometry Pipeline
+2026-03-19 12:11:48,430 | INFO    | ============================================================
+2026-03-19 12:11:48,430 | INFO    | --- Loading code problems ---
+2026-03-19 12:11:48,431 | INFO    | Loaded JSON data/quick_test_problems.json: 3 problems
+2026-03-19 12:11:48,431 | INFO    | --- Computing labels ---
+2026-03-19 12:11:48,431 | INFO    | Split custom: computed 3 label sets
+2026-03-19 12:11:48,431 | INFO    | --- Saving datasets ---
+2026-03-19 12:11:48,431 | INFO    | Saved split_custom.json
+2026-03-19 12:11:48,432 | INFO    | --- Loading tokenizer ---
+2026-03-19 12:11:48,432 | INFO    | Loading tokenizer: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 12:11:50,348 | INFO    | --- Loading model ---
+2026-03-19 12:11:51,939 | INFO    | Loading model: /Users/nkancharapu/Documents/mi/models/CodeLlama-7b-hf
+2026-03-19 12:12:02,515 | INFO    | Model loaded in 10.6s on mps:0 (GPU/cuda: False, MPS: True)
+2026-03-19 12:12:02,516 | INFO    | --- Extracting activations ---
+2026-03-19 12:12:02,516 | INFO    | Split custom: extracting 3 prompts x 3 layers
+2026-03-19 12:12:04,150 | INFO    | Split custom: extraction done in 1.6s
+2026-03-19 12:12:04,150 | INFO    | Activation extraction complete
+2026-03-19 12:12:04,150 | INFO    | --- Generating answers ---
+2026-03-19 12:12:04,150 | INFO    | Split custom: generating for 3 problems
+2026-03-19 12:12:04,150 | INFO    | Running model.generate() in batches (batch_size=1, max_new_tokens=512) — wait for 'generation done' log.
