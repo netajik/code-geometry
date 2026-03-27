@@ -1,89 +1,63 @@
 # Code Geometry
 
-**Manifold-style interpretability for code generation:** extract residual-stream activations from a code-capable LLM on coding tasks, evaluate correctness (e.g. tests), attach error categories, and analyze geometry with staged phases (embeddings, confound checks, subspaces; plus experimental LDA and Fourier summaries).
+We study **how a code LLM’s hidden states organize** around coding tasks when difficulty increases. The motivating lens is the same broad question as in interpretability more generally: are outcomes such as correctness, error type, or task structure reflected **linearly** or **subspace-wise** in activations—and what simple **confounds** (prompt length, number of test lines) might explain those patterns?
 
-**This repository does not implement or replicate the REMA paper** (or any single external framework as a fixed spec). Phase definitions, statistics, and nulls are defined in the scripts and in `docs/pipeline_phases.md`. For **background reading** on manifolds, REMA, and related work, see [REFERENCES.md](REFERENCES.md)—citations there are **not** a claim that this codebase follows those methods end-to-end.
+This repository runs a single pipeline: load tasks (JSON levels or HuggingFace benchmarks), generate answers with a frozen model, save **per-layer activations**, then run **Phase A–C** analyses (embeddings, deconfounding, concept subspaces). **Phase D (LDA)** and **Fourier screening** are included as scripts but are **work in progress** (interfaces, nulls, and reporting are still evolving—not production baselines yet).
 
 **Terminology:** *Level* = curriculum difficulty tier; *population* here means outcome groups (correct / wrong / error_category), not train/test splits. **`level_run_id`** names one saved batch (e.g. `level_01`); artifacts use **`level_run_<id>.json`** and **`level_run_<id>_layer{L}.npy`**. Set **`dataset.level_run_id`** to override the default batch id; **`dataset.hf_split`** selects the HuggingFace subset. Phase D uses stratified k-fold CV for LDA where applicable; avoid duplicating k-fold logic inside Phase C.
 
+---
+
 ## Research question
 
-When a code model gets a task wrong, how do **internal representations** differ from correct runs—and can we separate **genuine structure** from **confounds** (prompt length, number of test lines, etc.)? We study activation geometry for correct vs incorrect generations and error categories (syntax, logic, timeout, garbage).
+As problems get harder, does the model still separate **correct vs incorrect** representations in ways that survive obvious confounds? Where in the network do embedding geometry, subspace tests, and (eventually) discriminative or spectral summaries agree or disagree?
 
-## Pipeline status
-
-| Stage | Status | Script | Output |
-|-------|--------|--------|--------|
-| Data generation | Active | `pipeline.py`, `analysis.py` | Activations (`level_run_<id>_layer{L}.npy`), labels, answers, error analysis |
-| Phase B: Label confounds | Active | `phase_b_deconfounding.py` | Cramér’s V, point-biserial, splits/logistic, pairwise Pearson + residualized R, classified pairs, Spearman top-*K*; `deconfounding_plan.json`; Phase B is tables/JSON/Markdown (no Phase B PNGs) |
-| Phase A: Visual reconnaissance | Active | `phase_a_embeddings.py`, `phase_a_analysis.py` | UMAP/t-SNE embeddings + interestingness; `phase_a_analysis.py` adds CKA and norm profiles (can run after pipeline even before embedding CSVs exist) |
-| Phase C: Concept subspaces | Active | `phase_c_subspaces.py` | Concept subspaces (correct/wrong, error_category), significance, projections |
-| Phase D: LDA | **Work in progress** | `phase_d_lda.py` | Supervised correct vs wrong; CV accuracy + shuffle null—**API, thresholds, and skip rules may change** |
-| Fourier screening | **Work in progress** | `fourier_screening.py` | Layer-axis spectrum vs layer-order null—**experimental; validate on your config** |
-| Correct vs wrong geometry | Active (A/C); WIP (D) | — | Divergence and subspaces in Phase A/C; LDA when Phase D is stable |
-
-## Structure
-
-- **Stage 1 – Pipeline** (`pipeline.py`): Load code tasks → extract activations → generate code → evaluate (tests) → save labels, activations, answers.
-- **Stage 2 – Analysis** (`analysis.py`): Load answers + labels → error category breakdown → plots + JSON summary.
-- **Phase B** (`phase_b_deconfounding.py`): Label-level confounds — tables, JSON, Markdown; `deconfounding_plan.json` for Phase A/C; correlation matrices under `phase_b/correlation_matrices/`.
-- **Phase A**: UMAP/t-SNE by `level_run_id` / layer, colored by correct/error_category; interestingness; correct vs wrong divergence.
-- **Phase C**: Concept subspaces (conditional covariance + SVD) for correct/wrong and error_category; residualized activations for downstream.
-- **Phase D / Fourier**: See [docs/pipeline_phases.md](docs/pipeline_phases.md). Treat as **WIP** until release notes say otherwise.
+---
 
 ## Dataset
 
-Dataset loading is **generic**: only `dataset.source` and params for that source are used.
+Problems can come from **local JSON** (`data/levels/level1.json` … `level5.json`) or from **HuggingFace** (`dataset.source`, `hf_repo`, `hf_split`, column mapping). See **[docs/datasets.md](docs/datasets.md)** for parameters and example YAML. **[docs/test_levels.md](docs/test_levels.md)** describes the L0–L5 curriculum plan.
 
-- **source: json** — Local JSON: `dataset.json_path`; further keys in [docs/datasets.md](docs/datasets.md).
-- **source: huggingface** — HuggingFace: `dataset.hf_repo`, `dataset.hf_split`, and column mapping. Use for HumanEval (164 tasks) or MBPP (974 tasks); example configs in [docs/datasets.md](docs/datasets.md).
+| Level | Role |
+|-------|------|
+| 1 | Easiest; often near-saturated accuracy |
+| 2–4 | Intermediate difficulty; useful for correct/wrong contrasts |
+| 5 | Hardest; often error-rich when the model fails enough for subspace/LDA-style splits |
 
-See **[docs/datasets.md](docs/datasets.md)** for full parameter lists and example YAML.
+Exact counts and accuracies depend on the data and model; re-run `pipeline.py` + `analysis.py` for your run.
 
-**Curriculum levels (easy → hard):** **[docs/test_levels.md](docs/test_levels.md)** describes the L0–L5 plan: what each tier is for, how to configure it, what to verify in logs and outputs, and when to advance. Committed JSON lives under `data/levels/` (`level1.json` … `level5.json`).
+---
 
 ## Model
 
-Config: `model.name` (HuggingFace id or local path), `model.layers` to extract, `model.hidden_dim`. Example: `meta-llama/CodeLlama-7b-hf` or `codellama/CodeLlama-7b-hf` (base; not Instruct). Gated models need a Hugging Face token.
+- **CodeLlama** (e.g. `meta-llama/CodeLlama-7b-hf`)—set `model.name` in `config.yaml` or `config_colab.yaml`
+- Hidden size and layer list come from `config.yaml` (`model.layers`, etc.)
+- Activations are stored as **NumPy** arrays per layer under the configured `data_root` (see `path_utils` / pipeline logs)
+- Gated checkpoints need a Hugging Face token
 
-## Config
+---
 
-**If you are not the original author:** Edit `config.yaml` before running. Set **`model.name`** for your machine: either an absolute path to a local model folder or a HuggingFace repo id. Set `paths.workspace` and `paths.data_root` when you want outputs outside the repo defaults. See [RUN.md](RUN.md) for full steps and Colab/Drive notes.
+## Labels and metadata
 
-## Usage
+The pipeline attaches **execution outcomes** (correctness, error categories where applicable) and **pre-generation covariates** used in Phase B (e.g. prompt length, number of test lines). Phase B treats these as **observational** checks: strong associations with correctness warn you that geometric effects might be partly **confounded**, not causal.
 
-```bash
-# Install
-pip install -r requirements.txt
+---
 
-# Data generation (GPU)
-python pipeline.py --config config.yaml
+## Pipeline status
 
-# Error analysis (CPU)
-python analysis.py --config config.yaml
+| Stage | Status | Script | Typical outputs |
+|-------|--------|--------|-----------------|
+| Data generation + activations | Active | `pipeline.py` | Labels JSON, `answers/`, layer `.npy` activations, logs, plots |
+| Aggregate analysis | Active | `analysis.py` | `analysis_summary.json`, summary plots |
+| Phase B: deconfounding | Active | `phase_b_deconfounding.py` | `phase_b/summary.json`, `deconfounding_plan.json`, correlation tables |
+| Phase A: embeddings + summaries | Active | `phase_a_embeddings.py`, `phase_a_analysis.py` | UMAP/t-SNE, interestingness CSV, CKA / norm profiles, Phase A plots |
+| Phase C: concept subspaces | Active | `phase_c_subspaces.py` | `phase_c_results.csv`, permutation-style nulls, plots |
+| Phase D: LDA | **Work in progress** | `phase_d_lda.py` | CV / shuffle-null summaries (API and thresholds may change) |
+| Fourier screening | **Work in progress** | `fourier_screening.py` | Layer-axis spectrum summaries and plots (needs multiple layers in config) |
 
-# Phase B: label confounds (CPU; recommended before Phase A/C)
-python phase_b_deconfounding.py --config config.yaml
-# Or: bash run_phase_b.sh
+Treat **Phase D** and **Fourier** as experimental: validate on your config before relying on specific numbers.
 
-# Phase A: UMAP/t-SNE embeddings (CPU; needs umap-learn)
-python phase_a_embeddings.py --config config.yaml
-python phase_a_analysis.py --config config.yaml
-# Or: bash run_phase_a.sh
-
-# Phase C: concept subspaces (CPU/GPU depending on config)
-python phase_c_subspaces.py --config config.yaml
-# Or: bash run_phase_c.sh
-
-# Work in progress — expect rough edges, skips when classes are too small
-python phase_d_lda.py --config config.yaml
-# Or: bash run_phase_d.sh
-
-python fourier_screening.py --config config.yaml
-# Or: bash run_fourier.sh
-```
-
-**Google Colab:** see [COLAB.md](COLAB.md) and `colabsetup.ipynb` (Drive mount, `config_colab.yaml`, phase runners).
+---
 
 ## Project structure
 
@@ -111,7 +85,6 @@ code-geometry/
 ├── README.md
 ├── COLAB.md
 ├── RUN.md
-├── REFERENCES.md
 ├── docs/
 │   ├── pipeline_phases.md
 │   ├── datasets.md
@@ -124,22 +97,48 @@ code-geometry/
     └── export_benchmarks_to_json.py
 ```
 
-**Outputs:** Under `paths.workspace` and `paths.data_root` in `config.yaml`, in **dataset-named subfolders** (labels, logs, plots, activations, answers, phase_a, phase_b data as JSON/CSV, phase_c, phase_d, fourier when run). Default paths in sample configs may target Colab Drive; edit for local use. See [RUN.md](RUN.md).
+Heavy artifacts (weights, large `.npy`, Drive mirrors) stay **outside** git; paths are set in YAML. Outputs live under `paths.workspace` and `paths.data_root` in **dataset-named subfolders**. See [RUN.md](RUN.md).
 
-## Roadmap
+---
 
-- **Phase D (LDA):** Stabilize CV + shuffle null reporting and class-balance skip rules.
-- **Fourier screening:** Harden layer-axis statistics and null calibration across layer lists.
-- **Divergence / deviation metrics:** Optional extensions (e.g. k-NN style deviation between correct and error clouds) remain **design space**—not claimed to match any external paper’s exact definition unless documented in `docs/`.
+## Setup (local)
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+If `requirements.txt` is missing, install: `torch`, `numpy`, `scipy`, `pandas`, `scikit-learn`, `matplotlib`, `pyyaml`, `umap-learn`, `transformers`, `accelerate`, `datasets`, `huggingface_hub`, `tqdm`.
+
+Download the model (token if gated), then set `config.yaml` `model.name`, `paths.workspace`, and `paths.data_root`.
+
+---
+
+## Usage
+
+```bash
+python pipeline.py --config config.yaml
+python analysis.py --config config.yaml
+python phase_b_deconfounding.py --config config.yaml
+python phase_a_embeddings.py --config config.yaml
+python phase_a_analysis.py --config config.yaml
+python phase_c_subspaces.py --config config.yaml
+
+# WIP — expect rough edges, skips when classes are too small
+python phase_d_lda.py --config config.yaml
+python fourier_screening.py --config config.yaml
+```
+
+Shell wrappers: `run_phase_a.sh`, `run_phase_b.sh`, `run_phase_c.sh`, `run_phase_d.sh`, `run_fourier.sh`.
+
+**Colab:** [COLAB.md](COLAB.md) and `colabsetup.ipynb` (Drive, `config_colab.yaml`, phase cells).
+
+---
 
 ## Documentation
 
-- **[docs/pipeline_phases.md](docs/pipeline_phases.md)** — Phase-by-phase guide, run order, outputs, figure inventory.
-- **[docs/datasets.md](docs/datasets.md)** — Dataset config (`json`, level files, HuggingFace).
-- **[docs/test_levels.md](docs/test_levels.md)** — Level / difficulty tiers for code tasks.
-- **[RUN.md](RUN.md)** — Install, config, commands.
-- **[COLAB.md](COLAB.md)** — Google Colab workflow.
-
-## References
-
-See [REFERENCES.md](REFERENCES.md) for related manifold and interpretability papers (background only).
+- **[docs/pipeline_phases.md](docs/pipeline_phases.md)** — Phase-by-phase guide, run order, outputs
+- **[docs/datasets.md](docs/datasets.md)** — Dataset config (JSON, levels, HuggingFace)
+- **[docs/test_levels.md](docs/test_levels.md)** — Level / difficulty tiers
+- **[RUN.md](RUN.md)** — Install, config, commands
+- **[COLAB.md](COLAB.md)** — Google Colab workflow
